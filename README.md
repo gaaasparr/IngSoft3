@@ -1,18 +1,20 @@
 # IngSoft3
 #### 1- Instalar Git
-Los pasos y referencias asumen el uso del sistema operativo Windows, en caso otros SO seguir recomendaciones específicas.
 
-  - Bajar e instalar el cliente git. Por ejemplo, https://git-for-windows.github.io/
-  - Bajar e instalar un cliente visual.
- Por ejemplo, TortoiseGit para Windows o SourceTree para Windows/MAC:
-    - https://tortoisegit.org/
-    - https://www.sourcetreeapp.com/
-    - Lista completa: https://git-scm.com/downloads/guis/
+git instalado en la pc
+
+![image](https://github.com/user-attachments/assets/9a400524-4fbe-4512-b0b1-22df9e58b3bb)
+
 
 #### 2- Crear un repositorio local y agregar archivos
-  - Crear un repositorio local en un nuevo directorio.
-  - Agregar un archivo Readme.md, agregar algunas líneas con texto a dicho archivo.
-  - Crear un commit y proveer un mensaje descriptivo.
+  - Se creó un repositorio local junto con su respectivo readme y con un mensaje incluido. usamos cat para ver el contenido
+
+![image](https://github.com/user-attachments/assets/8e728346-4443-4066-9f35-a08a804a4ad0)
+
+![image](https://github.com/user-attachments/assets/12f0e98f-47fa-4ae2-8645-f85263345df1)
+
+![image](https://github.com/user-attachments/assets/f4c6710c-0791-44a9-861a-fd817a6589b7)
+
 
 #### 3- Configuración del Editor Predeterminado
  - Instalar Notepad ++ para Windows o TextMate para Mac OS, colocarle un alias y configurarlo como editor predeterminado
