@@ -17,7 +17,10 @@ git instalado en la pc
 
 
 #### 3- Configuración del Editor Predeterminado
- - Instalar Notepad ++ para Windows o TextMate para Mac OS, colocarle un alias y configurarlo como editor predeterminado
+ - Instale Notepad ++ y para configurarlo como editor predeterminado utilicé el seguiente comando
+
+   ![image](https://github.com/user-attachments/assets/341c3a84-9b4c-453c-992d-472893673f61)
+
    
 #### 4- Creación de Repos 01 -> Crearlo en GitHub, clonarlo localmente y subir cambios
   - Crear una cuenta en https://github.com
