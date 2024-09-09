@@ -3,7 +3,11 @@
 
 git instalado en la pc
 
-![image](https://github.com/user-attachments/assets/9a400524-4fbe-4512-b0b1-22df9e58b3bb)
+![image](https://github.com/user-attachments/assets/524634da-9012-4a39-8ae3-fef71a7e5428)
+
+![image](https://github.com/user-attachments/assets/04b35fd0-3acf-4645-ae0b-22b2d715ba4d)
+
+
 
 
 #### 2- Crear un repositorio local y agregar archivos
@@ -25,6 +29,8 @@ git instalado en la pc
 #### 4- Creación de Repos 01 -> Crearlo en GitHub, clonarlo localmente y subir cambios
   - Crear una cuenta en https://github.com
   - Crear un nuevo repositorio en dicha página con el Readme.md por defecto
+  ![image](https://github.com/user-attachments/assets/8d42d73f-0d9b-4b23-971a-284bd92f3d19)
+
   - Clonar el repo remoto en un nuevo directorio local
   - Editar archivo Readme.md agregando algunas lineas de texto
   - Editar (o crear si no existe) el archivo .gitignore agregando los archivos *.bak
