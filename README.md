@@ -5,15 +5,12 @@ git instalado en la pc
 
 ![image](https://github.com/user-attachments/assets/524634da-9012-4a39-8ae3-fef71a7e5428)
 
-![image](https://github.com/user-attachments/assets/04b35fd0-3acf-4645-ae0b-22b2d715ba4d)
-
-
-
 
 #### 2- Crear un repositorio local y agregar archivos
   - Se creó un repositorio local junto con su respectivo readme y con un mensaje incluido. usamos cat para ver el contenido
 
-![image](https://github.com/user-attachments/assets/8e728346-4443-4066-9f35-a08a804a4ad0)
+![image](https://github.com/user-attachments/assets/04b35fd0-3acf-4645-ae0b-22b2d715ba4d)
+
 
 ![image](https://github.com/user-attachments/assets/12f0e98f-47fa-4ae2-8645-f85263345df1)
 
