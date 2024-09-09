@@ -12,15 +12,11 @@ git instalado en la pc
 ![image](https://github.com/user-attachments/assets/04b35fd0-3acf-4645-ae0b-22b2d715ba4d)
 
 
-![image](https://github.com/user-attachments/assets/12f0e98f-47fa-4ae2-8645-f85263345df1)
-
-![image](https://github.com/user-attachments/assets/f4c6710c-0791-44a9-861a-fd817a6589b7)
-
 
 #### 3- Configuración del Editor Predeterminado
  - Instale Notepad ++ y para configurarlo como editor predeterminado utilicé el seguiente comando
 
-   ![image](https://github.com/user-attachments/assets/341c3a84-9b4c-453c-992d-472893673f61)
+
 
    
 #### 4- Creación de Repos 01 -> Crearlo en GitHub, clonarlo localmente y subir cambios
