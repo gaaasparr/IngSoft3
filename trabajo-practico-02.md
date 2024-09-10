@@ -178,31 +178,53 @@ Accedamos nuevamente a http://localhost/WeatherForecast y vemos que nos devuelve
 Modificamos dockerfile para que entre en bash sin ejecutar automaticamente la app
 #ENTRYPOINT ["dotnet", "SimpleWebAPI.dll"]
 CMD ["/bin/bash"]
+
+![image](https://github.com/user-attachments/assets/8662dee7-72c5-408b-9da0-8833a4ea438e)
+
 Rehacemos la imagen
 docker build -t mywebapi .
+![image](https://github.com/user-attachments/assets/c62fd614-f80e-4639-a04b-021b591d5e79)
+
+
 Corremos contenedor en modo interactivo exponiendo puerto
 docker run -it --rm -p 80:80 mywebapi
+![image](https://github.com/user-attachments/assets/c3447d8d-f9a7-4ce7-8875-84694ccf2a89)
+
 Navegamos a http://localhost/weatherforecast
 Vemos que no se ejecuta automaticamente
 Ejecutamos app:
 dotnet SimpleWebAPI.dll
+![image](https://github.com/user-attachments/assets/e643e12d-3ac3-45d9-ade3-54f4538dadd6)
+
 -Volvemos a navegar a http://localhost/weatherforecast
+![image](https://github.com/user-attachments/assets/9f01d295-5ca0-4bd7-8a6e-55bea1b4afd1)
 
 Salimos del contenedor
+![image](https://github.com/user-attachments/assets/e470f531-cafe-47b5-85d2-afe629424fb6)
+
 10- Montando volúmenes
 Hasta este punto los contenedores ejecutados no tenían contacto con el exterior, ellos corrían en su propio entorno hasta que terminaran su ejecución. Ahora veremos cómo montar un volumen dentro del contenedor para visualizar por ejemplo archivos del sistema huésped:
 
 Ejecutar el siguiente comando, cambiar myusuario por el usuario que corresponda. En Mac puede utilizarse /Users/miusuario/temp):
-docker run -it --rm -p 80:80 -v /Users/miuser/temp:/var/temp  mywebapi
+docker run -it --rm -p 80:80 -v /Users/miuser/temp:/var/temp  mywebapi (lo hice en el puerto 8080, porque en este punto creo que el peurto esta ocupado en una instancia que yo mismo cree sin querer y si cierro la terminal no estoy muy seguro de como volver hasta este punto) 
+![image](https://github.com/user-attachments/assets/84e7e726-62ba-4a9a-8500-5827369418c9)
+
 Dentro del contenedor correr
 ls -l /var/temp
 touch /var/temp/hola.txt
+![image](https://github.com/user-attachments/assets/59cb45a9-0fc6-434a-a0c7-45338d93ea98)
+
 Verificar que el Archivo se ha creado en el directorio del guest y del host.
+![image](https://github.com/user-attachments/assets/b0a777ce-51c6-4f2d-9724-0243e953525d)
+
 11- Utilizando una base de datos
 Levantar una base de datos PostgreSQL
 mkdir $HOME/.postgres
 
 docker run --name my-postgres -e POSTGRES_PASSWORD=mysecretpassword -v $HOME/.postgres:/var/lib/postgresql/data -p 5432:5432 -d postgres:9.4
+
+![image](https://github.com/user-attachments/assets/d59d5928-9d27-41bf-821e-787d1ecedf91)
+
 Ejecutar sentencias utilizando esta instancia
 docker exec -it my-postgres /bin/bash
 
@@ -220,6 +242,9 @@ select * from tabla_a;
 \q
 
 exit
+
+![image](https://github.com/user-attachments/assets/c36cd6e0-4e5c-4c47-992d-afab4916a5b1)
+
 Conectarse a la base utilizando alguna IDE (Dbeaver - https://dbeaver.io/, Azure DataStudio -https://azure.microsoft.com/es-es/products/data-studio, etc). Interactuar con los objectos objectos creados.
 
 Explicar que se logro con el comando docker run y docker exec ejecutados en este ejercicio.
