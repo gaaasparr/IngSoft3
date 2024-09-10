@@ -253,6 +253,9 @@ Explicar que se logro con el comando docker run y docker exec ejecutados en este
 Armar un contenedor con SQL Server
 Crear BD, Tablas y ejecutar SELECT
 
+![image](https://github.com/user-attachments/assets/d38a9175-6d32-46c7-bfff-3cef8c70c4e1)
+
+
 
 13- Presentación del trabajo práctico.
 Subir un archivo md (puede ser en una carpeta) trabajo-practico-02 con las salidas de los comandos utilizados. Si es necesario incluir también capturas de pantalla.
