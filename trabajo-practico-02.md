@@ -143,23 +143,19 @@ Ejecutar un contenedor con nuestra imagen
 
 Subir imagen a nuestra cuenta de dockerhub
 ![image](https://github.com/user-attachments/assets/78804d49-70f3-4e6b-b1ea-f621f56eab20)
+![image](https://github.com/user-attachments/assets/ca85cfb4-065d-4ca8-8e7e-ff33cf55adc1)
 
-7.1 Inicia sesión en Docker Hub
-Primero, asegúrate de estar autenticado en Docker Hub desde tu terminal:
-docker login
-7.2 Etiquetar la imagen a subir con tu nombre de usuario de Docker Hub y el nombre de la imagen. Por ejemplo:
-docker tag <nombre_imagen_local> <tu_usuario_dockerhub>/<nombre_imagen>:<tag>
-7.3 Subir la Imagen
-Para subir la imagen etiquetada a Docker Hub, utiliza el comando docker push:
-docker push <tu_usuario_dockerhub>/<nombre_imagen>:<tag>
-7.4 Verificar la Subida
-docker pull <tu_usuario_dockerhub>/<nombre_imagen>:<tag>
+
 8- Publicando puertos
 En el caso de aplicaciones web o base de datos donde se interactúa con estas aplicaciones a través de un puerto al cual hay que acceder, estos puertos están visibles solo dentro del contenedor. Si queremos acceder desde el exterior deberemos exponerlos.
 
 Ejecutar la siguiente imagen, en este caso utilizamos la bandera -d (detach) para que nos devuelva el control de la consola:
 docker run --name myapi -d mywebapi
+![image](https://github.com/user-attachments/assets/1df2179c-acfb-43a0-a1e4-2b178e50844a)
+
 Ejecutamos un comando ps:
+![image](https://github.com/user-attachments/assets/ca0189ca-cdfa-4ea4-b567-c078cbf61891)
+
 
 Vemos que el contendor expone 3 puertos el 80, el 5254 y el 443, pero si intentamos en un navegador acceder a http://localhost/WeatherForecast no sucede nada.
 
@@ -167,9 +163,17 @@ Procedemos entonces a parar y remover este contenedor:
 
 docker kill myapi
 docker rm myapi
+
+![image](https://github.com/user-attachments/assets/03b0f2f0-372a-416a-bb9d-9c13f1936365)
+
 Vamos a volver a correrlo otra vez, pero publicando el puerto 80
 docker run --name myapi -d -p 80:80 mywebapi
+
+![image](https://github.com/user-attachments/assets/a1b1ca38-7063-47ff-a77f-2d0cbb10900c)
+
 Accedamos nuevamente a http://localhost/WeatherForecast y vemos que nos devuelve datos.
+![image](https://github.com/user-attachments/assets/7fb8645b-6991-4eaa-9709-c5df4e3b83c0)
+
 9- Modificar Dockerfile para soportar bash
 Modificamos dockerfile para que entre en bash sin ejecutar automaticamente la app
 #ENTRYPOINT ["dotnet", "SimpleWebAPI.dll"]
