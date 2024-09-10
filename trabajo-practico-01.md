@@ -81,7 +81,8 @@ git instalado en la pc
 #### 10- Algunos ejercicios online
   - Entrar a la página https://learngitbranching.js.org/
   - Completar los ejercicios **Introduction Sequence**
-  - Opcional - Completar el resto de los ejercicios para ser un experto en Git!!!
+    ![image](https://github.com/user-attachments/assets/4426060f-ea83-4e81-bf9b-a5b5fa12b3a6)
+
 
 #### 11- Crear Repositorio de la materia
   - Crear un repositorio para la materia en github. Por ejemplo **ing-software-3**
