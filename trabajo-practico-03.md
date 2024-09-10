@@ -8,6 +8,12 @@ Azure DevOps es una plataforma de Microsoft que ofrece un conjunto integrado de 
 
 Beneficios de utilizar Azure DevOps en comparación con otras soluciones.
 
+Integración Completa: Azure DevOps ofrece una integración fluida entre planificación, desarrollo, pruebas y despliegue, lo que facilita una visión completa del proceso de desarrollo.
+Soporte para Git y TFVC: Ofrece soporte tanto para Git (sistema de control de versiones distribuido) como para TFVC (Team Foundation Version Control), lo que permite a los equipos elegir la solución que mejor se adapte a sus necesidades.
+Automatización de CI/CD: Con Azure Pipelines, puedes automatizar el proceso de integración y despliegue continuo, lo que acelera la entrega de software y mejora la calidad.
+Gestión de Proyectos: Azure Boards proporciona herramientas de gestión de proyectos basadas en Kanban y Scrum, lo que facilita el seguimiento y la organización del trabajo.
+Integración con Otras Herramientas: Se integra fácilmente con herramientas como GitHub, Jenkins, Docker y Kubernetes, permitiendo una mayor flexibilidad y compatibilidad con tecnologías modernas.
+
 Componentes Principales de Azure DevOps
 
 Azure Repos
