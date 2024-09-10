@@ -3,22 +3,37 @@ Diferentes opciones para cada sistema operativo
 https://docs.docker.com/
 Ejecutar el siguiente comando para comprobar versiones de cliente y demonio.
 docker version
+
+![image](https://github.com/user-attachments/assets/745f8e13-7e9a-47a5-ac56-c4d36e14765c)
+
 2- Explorar DockerHub
 Registrase en docker hub: https://hub.docker.com/
 Familiarizarse con el portal
+![image](https://github.com/user-attachments/assets/0e1e84e8-c302-4eff-a22c-e21882461090)
+
+
 3- Obtener la imagen BusyBox
 Ejecutar el siguiente comando, para bajar una imagen de DockerHub
 docker pull busybox
+![image](https://github.com/user-attachments/assets/aa430563-d174-4299-8e94-f854fbff42ea)
+
 Verificar qué versión y tamaño tiene la imagen bajada, obtener una lista de imágenes locales:
 docker images
+![image](https://github.com/user-attachments/assets/0c4b9f86-f440-453f-bd42-0ba70b6f1dfd)
+
 4- Ejecutando contenedores
 Ejecutar un contenedor utilizando el comando run de docker:
 docker run busybox
+![image](https://github.com/user-attachments/assets/c2e98845-f740-44a3-abc6-28e284bb1b65)
+
 Explicar porque no se obtuvo ningún resultado
 
-Especificamos algún comando a correr dentro del contenedor, ejecutar por ejemplo:
+Este comando ejecuta el contenedor utilizando la imagen busybox. Sin embargo, no se obtuvo ningún resultado porque no se especificó ningún comando a ejecutar dentro del contenedor. El contenedor ejecuta y termina inmediatamente ya que no hay un proceso que lo mantenga activo.
 
+Especificamos algún comando a correr dentro del contenedor, ejecutar por ejemplo:
 docker run busybox echo "Hola Mundo"
+![image](https://github.com/user-attachments/assets/5c3a753c-005b-4d79-9b73-f1c43914b4e0)
+
 Ver los contenedores ejecutados utilizando el comando ps:
 docker ps
 Vemos que no existe nada en ejecución, correr entonces:
