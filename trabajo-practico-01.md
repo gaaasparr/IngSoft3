@@ -25,10 +25,18 @@ git instalado en la pc
   ![image](https://github.com/user-attachments/assets/8d42d73f-0d9b-4b23-971a-284bd92f3d19)
 
   - Clonar el repo remoto en un nuevo directorio local
-  - Editar archivo Readme.md agregando algunas lineas de texto
+    ![image](https://github.com/user-attachments/assets/ab409461-149c-4744-a863-e9cd650f9e90)
+    ![image](https://github.com/user-attachments/assets/a3a4bb83-dea7-4254-9cc2-d8440ecf6b8a)
+    
   - Editar (o crear si no existe) el archivo .gitignore agregando los archivos *.bak
   - Crear un commit y porveer un mensaje descriptivo
+    ![image](https://github.com/user-attachments/assets/6cee44ff-4db3-4cf2-9ff9-b3301f2bf8bd)
+
   - Intentar un push al repo remoto
+![image](https://github.com/user-attachments/assets/2c316d58-8b01-45ac-8cd2-e403ffd49601)
+![image](https://github.com/user-attachments/assets/34ce1acf-5281-4155-8623-6c4f0eb15d89)
+
+
   - En caso de ser necesario configurar las claves SSH requeridas y reintentar el push.
 
 #### 5- Creación de Repos 02-> Crearlo localmente y subirlo a GitHub
@@ -83,7 +91,3 @@ git instalado en la pc
   - Completar los ejercicios **Introduction Sequence**
     ![image](https://github.com/user-attachments/assets/4426060f-ea83-4e81-bf9b-a5b5fa12b3a6)
 
-
-#### 11- Crear Repositorio de la materia
-  - Crear un repositorio para la materia en github. Por ejemplo **ing-software-3**
-  - Subir archivo(s) .md con los resultados e imágenes de este trabajo práctico. Puede ser en una subcarpeta **trabajo-practico-01**
