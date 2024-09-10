@@ -24,6 +24,7 @@ docker images
 4- Ejecutando contenedores
 Ejecutar un contenedor utilizando el comando run de docker:
 docker run busybox
+
 ![image](https://github.com/user-attachments/assets/c2e98845-f740-44a3-abc6-28e284bb1b65)
 
 Explicar porque no se obtuvo ningún resultado
@@ -32,13 +33,23 @@ Este comando ejecuta el contenedor utilizando la imagen busybox. Sin embargo, no
 
 Especificamos algún comando a correr dentro del contenedor, ejecutar por ejemplo:
 docker run busybox echo "Hola Mundo"
+
 ![image](https://github.com/user-attachments/assets/5c3a753c-005b-4d79-9b73-f1c43914b4e0)
 
 Ver los contenedores ejecutados utilizando el comando ps:
 docker ps
+
+![image](https://github.com/user-attachments/assets/1aabcfd0-52b4-4a9b-8278-327b01a4e939)
+
 Vemos que no existe nada en ejecución, correr entonces:
 docker ps -a
+
+![image](https://github.com/user-attachments/assets/c8897f76-97bf-4063-bda9-3821f467a3d9)
+
 Mostrar el resultado y explicar que se obtuvo como salida del comando anterior.
+
+Con este comando vemos la lista de todos los contenedores, incluidos los que ya se han detenido. Al ejecutar esto, vemos una lista de contenedores que fueron ejecutados y se detuvieron, incluidos aquellos en los que se utilizó busybox echo. El estado del contenedor indicará que finalizó con éxito (exit 0).
+
 5- Ejecutando en modo interactivo
 Ejecutar el siguiente comando
 docker run -it busybox sh
@@ -47,27 +58,36 @@ ps
 uptime
 free
 ls -l /
+
+![image](https://github.com/user-attachments/assets/6b42a731-7c22-4860-8f79-43312baa9ca0)
+
 Salimos del contenedor con:
 exit
 6- Borrando contenedores terminados
 Obtener la lista de contenedores
 docker ps -a
+![image](https://github.com/user-attachments/assets/dda49c4c-26bb-4ad2-8273-e013b8b7ad0d)
+
 Para borrar podemos utilizar el id o el nombre (autogenerado si no se especifica) de contenedor que se desee, por ejemplo:
 docker rm elated_lalande
 Para borrar todos los contenedores que no estén corriendo, ejecutar cualquiera de los siguientes comandos:
 docker rm $(docker ps -a -q -f status=exited)
+![image](https://github.com/user-attachments/assets/5853bd01-3209-4221-8d4e-0143cb300930)
+
 docker container prune
+![image](https://github.com/user-attachments/assets/3c9a3b60-d1e2-4bd2-b49a-028c37dc3d23)
+
 7- Construir una imagen
 Conceptos de DockerFile
 Leer https://docs.docker.com/engine/reference/builder/
 Describir las instrucciones
-FROM
-RUN
-ADD
-COPY
-EXPOSE
-CMD
-ENTRYPOINT
+FROM: Define la imagen base que se usará para crear la nueva imagen.
+RUN: Ejecuta un comando dentro de la imagen durante el proceso de construcción. 
+ADD: Copia archivos o directorios desde el sistema de archivos del host a la imagen. A diferencia de COPY, ADD también puede extraer archivos .tar.
+COPY: Similar a ADD, pero solo copia archivos o directorios.
+EXPOSE: Indica qué puerto debe estar disponible para la red externa. 
+CMD:Define el comando por defecto que se ejecutará cuando se inicie un contenedor.
+ENTRYPOINT: Especifica el comando principal que se ejecutará en el contenedor. A diferencia de CMD, ENTRYPOINT no puede ser sobrescrito. 
 A partir del código https://github.com/ingsoft3ucc/SimpleWebAPI crearemos una imagen.
 Clonar repo
 Crear imagen etiquetándola con un nombre. El punto final le indica a Docker que use el dir actual
