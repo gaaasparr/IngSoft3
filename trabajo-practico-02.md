@@ -75,6 +75,7 @@ docker rm $(docker ps -a -q -f status=exited)
 ![image](https://github.com/user-attachments/assets/5853bd01-3209-4221-8d4e-0143cb300930)
 
 docker container prune
+
 ![image](https://github.com/user-attachments/assets/3c9a3b60-d1e2-4bd2-b49a-028c37dc3d23)
 
 7- Construir una imagen
@@ -90,12 +91,59 @@ CMD:Define el comando por defecto que se ejecutará cuando se inicie un contened
 ENTRYPOINT: Especifica el comando principal que se ejecutará en el contenedor. A diferencia de CMD, ENTRYPOINT no puede ser sobrescrito. 
 A partir del código https://github.com/ingsoft3ucc/SimpleWebAPI crearemos una imagen.
 Clonar repo
+![image](https://github.com/user-attachments/assets/dbd25ca9-6636-4384-a0dd-ddc659cd7c8b)
+
 Crear imagen etiquetándola con un nombre. El punto final le indica a Docker que use el dir actual
 docker build -t mywebapi .
-Revisar Dockerfile y explicar cada línea
-Ver imágenes disponibles
+![image](https://github.com/user-attachments/assets/50e03ede-4309-474b-9b11-137f1e5aa653)
+
+Revisar Dockerfile y explicar cada línea:
+
+1. FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+Se utiliza una imagen base de ASP.NET Core 7.0 desde el registro de contenedores de Microsoft. Esta imagen incluye todo lo necesario para ejecutar aplicaciones ASP.NET Core.
+AS base: Igual que en BDD renombramos, esta es una etiqueta permite hacer referencia a esta imagen en pasos posteriores del Dockerfile.
+2. WORKDIR /app
+Establecemos el directorio de trabajo dentro del contenedor en /app. Este será el directorio predeterminado en el que se ejecutarán los siguientes comandos.
+3. EXPOSE 80
+4. EXPOSE 443
+5. EXPOSE 5254
+En estos comandos abrimos los puertos 80, 443 y 5254 para el tráfico. El puerto 80 es el predeterminado para HTTP, el 443 para HTTPS, y el 5254 es el puerto que utiliza la aplicación.
+6. FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+Usamos una imagen del SDK de .NET Core 7.0 para compilar la aplicación. A diferencia de la imagen de ASP.NET Core, esta imagen incluye todas las herramientas necesarias para desarrollar y construir aplicaciones .NET.
+7. WORKDIR /src
+Cambia el directorio de trabajo a /src, donde se colocará el código fuente para la compilación.
+8. COPY ["SimpleWebAPI/SimpleWebAPI.csproj", "SimpleWebAPI/"]
+Copiamos el archivo del proyecto SimpleWebAPI.csproj al directorio SimpleWebAPI/ dentro del contenedor. Esto es necesario para restaurar las dependencias antes de copiar el resto del código.
+9. RUN dotnet restore "SimpleWebAPI/SimpleWebAPI.csproj"
+Restauramos las dependencias del proyecto especificado (SimpleWebAPI.csproj) usando dotnet restore. Esto descarga los paquetes necesarios para compilar el proyecto.
+10. COPY . .
+Hacemos una copia de todo el contenido del contexto de construcción (el directorio donde está el Dockerfile) al contenedor en el directorio de trabajo actual (/src).
+11. WORKDIR "/src/SimpleWebAPI"
+Cambiamos el directorio de trabajo al directorio del proyecto (/src/SimpleWebAPI) dentro del contenedor.
+12. RUN dotnet build "SimpleWebAPI.csproj" -c Release -o /app/build
+Ejecutamos la compilación del proyecto en modo Release usando el comando dotnet build. El resultado es colocado en /app/build.
+13. FROM build AS publish
+Utiliza la imagen generada en el paso de compilación (build) para continuar con el proceso de publicación.
+14. RUN dotnet publish "SimpleWebAPI.csproj" -c Release -o /app/publish /p:UseAppHost=false
+Publicamos la aplicación .NET para su despliegue, usando el comando dotnet publish. El resultado se coloca en /app/publish. La opción /p:UseAppHost=false indica que no se creará un ejecutable nativo (esto es útil para contenedores, ya que se usa dotnet <dll> para ejecutar).
+15. FROM base AS final
+Utilizamos la imagen base de ASP.NET (base) para crear la imagen final que se usará para ejecutar la aplicación.
+16. WORKDIR /app
+Nuevamente se cambia el directorio de trabajo a /app, esta vez en la imagen final.
+17. COPY --from=publish /app/publish .
+Copia los archivos publicados desde la etapa publish a la imagen final.
+18. ENTRYPOINT ["dotnet", "SimpleWebAPI.dll"]
+Establece el punto de entrada para el contenedor. Cuando el contenedor se ejecute, se ejecutará el comando dotnet SimpleWebAPI.dll, que iniciará la aplicación.
+19. #CMD ["/bin/bash"]
+Esta línea está comentada y no se ejecutará. Si se descomentara, indicaría que el contenedor debería iniciarse en modo interactivo con un shell Bash.
+![image](https://github.com/user-attachments/assets/b418c68b-35e9-4503-b2fb-88fd4a636585)
+
 Ejecutar un contenedor con nuestra imagen
+![image](https://github.com/user-attachments/assets/009286a7-afdd-4d35-b644-5e0fd2288223)
+
 Subir imagen a nuestra cuenta de dockerhub
+![image](https://github.com/user-attachments/assets/78804d49-70f3-4e6b-b1ea-f621f56eab20)
+
 7.1 Inicia sesión en Docker Hub
 Primero, asegúrate de estar autenticado en Docker Hub desde tu terminal:
 docker login
