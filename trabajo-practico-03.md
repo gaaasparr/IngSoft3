@@ -93,14 +93,22 @@ Cree un repo desde el panel de Azure
 
 ![image](https://github.com/user-attachments/assets/bc72abd7-f96c-4ace-abed-cd6900cdd55a)
 
+![image](https://github.com/user-attachments/assets/6889b3bc-4ab5-4be9-90e5-40e7a17a0cff)
+
+
 
 3.8 Crear un sprint
 
+![image](https://github.com/user-attachments/assets/ba21c59d-88f1-4e4f-a145-c7aeefccea62)
+![image](https://github.com/user-attachments/assets/ee82b650-73ae-4598-8c4c-93082fcc2903)
+![image](https://github.com/user-attachments/assets/c4da8a94-2bae-47f3-a695-23e00ce91e2d)
+
+
 
 3.9 Crear User Stories
-
-
 3.10 Crear Tasks y Bugs
+
+![image](https://github.com/user-attachments/assets/55732e6a-4db2-45de-a1bc-16c339f8ee51)
 
 
 4- Presentación del trabajo práctico.
