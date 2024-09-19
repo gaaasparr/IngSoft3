@@ -39,18 +39,22 @@ Marketplace de extensiones
 Añadir funcionalidades adicionales a Azure DevOps.
 3- Pasos del TP
 3.1 Crear una cuenta en Azure DevOps
+
 ![image](https://github.com/user-attachments/assets/d8cbb488-b54e-4ef3-b654-0e8f3bc5d042)
 
 
 3.2 Crear un proyecto Sample01
 Primero le di acceso publico a todos
+
 ![image](https://github.com/user-attachments/assets/39455e3f-18c0-4f3e-a3b1-e8042ff2eec5)
 Despues cree el proyecto
+
 ![image](https://github.com/user-attachments/assets/6abf3520-b765-4662-b19e-41f74e8618e0)
 
 
 3.3 Crear un repo GIT desde cero
 Cree un repo desde el panel de Azure
+
 ![image](https://github.com/user-attachments/assets/fc3b7111-2122-4cf1-b691-2f7d9b7041d9)
 ![image](https://github.com/user-attachments/assets/1fb41400-d632-4260-b612-90bbd2860f57)
 
@@ -63,12 +67,14 @@ Cree un repo desde el panel de Azure
 
 
 3.5 Importar un repo desde GitHub: https://github.com/ingsoft3ucc/SimpleWebAPI.git
+
 ![image](https://github.com/user-attachments/assets/96560b13-43ba-4221-ae89-09df20a10419)
 ![image](https://github.com/user-attachments/assets/b3ece731-1c2a-414a-8abb-ff8c82e4bf80)
 ![image](https://github.com/user-attachments/assets/8230fd97-c7df-4fc5-bafe-938fc7e7dd80)
 
 
 3.6 Realizar un cambio en un archivo, y subirlo al repo de ADO.
+
 ![image](https://github.com/user-attachments/assets/48cfd0b7-e405-49c4-8b10-113196f8c64b)
 
 
@@ -82,6 +88,7 @@ Cree un repo desde el panel de Azure
 
 
 3.8 Cambiar el tipo de proceso de Basic a Agile
+
 ![image](https://github.com/user-attachments/assets/4d33c5b1-1855-4b22-abbb-41594c7742a2)
 
 ![image](https://github.com/user-attachments/assets/bc72abd7-f96c-4ace-abed-cd6900cdd55a)
