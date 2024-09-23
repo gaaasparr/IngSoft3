@@ -1,6 +1,10 @@
  Pasos del TP
 4.1 Verificar acceso a Pipelines concedido
-![image](https://github.com/user-attachments/assets/8e88ac49-e4c2-486c-966d-04cf1f7d6833)
+![image](https://github.com/user-attachments/assets/ab31c085-4893-4b37-8f3a-3f5ba7fc4aca)
+
+Al final corri todo en privado, porque tenía problemas con los permisos para correr en public
+![image](https://github.com/user-attachments/assets/a59a391e-891d-4046-9f13-2eb0e9b9ee26)
+
 
 4.2 Agregar en pipeline YAML una tarea de Publish.
 
