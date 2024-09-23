@@ -17,6 +17,15 @@ La tarea de Publish en un pipeline que corre en un agente de Microsoft en la nub
 
 4.4 Descargar el resultado del pipeline y correr localmente el software compilado.
 
+![image](https://github.com/user-attachments/assets/0fd476e7-5ebd-4c5f-8d2a-b277a24772cf)
+
+![image](https://github.com/user-attachments/assets/ea98f9f3-d1d4-4167-b372-d7fc8e99983a)
+
+![image](https://github.com/user-attachments/assets/8aaa506d-84f2-4f79-8056-05c86e9bd5ec)
+
+Una vez descargado, corremos localmente
+
+
 
 
 4.5 Habilitar el editor clásico de pipelines. Explicar las diferencias claves entre este tipo de editor y el editor YAML.
