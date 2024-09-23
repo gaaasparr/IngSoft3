@@ -3,10 +3,18 @@
 ![image](https://github.com/user-attachments/assets/8e88ac49-e4c2-486c-966d-04cf1f7d6833)
 
 4.2 Agregar en pipeline YAML una tarea de Publish.
+
+![image](https://github.com/user-attachments/assets/bff6927c-48e1-46cb-8f3a-0a654a30d6dc)
+
+
 4.3 Explicar por qué es necesario contar con una tarea de Publish en un pipeline que corre en un agente de Microsoft en la nube.
+
 La tarea de Publish en un pipeline que corre en un agente de Microsoft en la nube es necesaria porque estos agentes son efímeros. Se destruyen al finalizar la ejecución y los archivos generados (artefactos) se pierden si no se publican. Publicar los artefactos permite que sean almacenados en un lugar centralizado, accesible en Azure DevOps, para que puedan ser utilizados en despliegues posteriores, mantenidos para auditoría. De esta manera podemos compartirlos con otros equipos o pipelines. Esto asegura la continuidad del proceso de CI/CD, facilita el despliegue y versionado del software.
 
 4.4 Descargar el resultado del pipeline y correr localmente el software compilado.
+
+
+
 4.5 Habilitar el editor clásico de pipelines. Explicar las diferencias claves entre este tipo de editor y el editor YAML.
 4.6 Crear un nuevo pipeline con el editor clásico. Descargar el resultado del pipeline y correr localmente el software compilado.
 4.7 Configurar CI en ambos pipelines (YAML y Classic Editor). Mostrar resultados de la ejecución automática de ambos pipelines al hacer un commit en la rama main.
