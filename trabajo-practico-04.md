@@ -16,7 +16,23 @@ La tarea de Publish en un pipeline que corre en un agente de Microsoft en la nub
 
 
 4.5 Habilitar el editor clásico de pipelines. Explicar las diferencias claves entre este tipo de editor y el editor YAML.
+
+![image](https://github.com/user-attachments/assets/57784b3c-79da-4f78-b953-3e40319c79c3)
+
+El editor clásico de pipelines en Azure DevOps ofrece una interfaz gráfica para configurar tareas de manera visual, ideal para usuarios no técnicos, pero no permite versionar el pipeline junto al código. Con el editor YAML utilizamos un archivo dentro del repositorio, lo que permite versionar los cambios, facilita la automatización y es más flexible para proyectos de mayor complejidad.
+De manera muy resumida: El editor clásico es más sencillo de usar, pero YAML ofrece mejor escalabilidad, colaboración y control sobre el pipeline.
+
 4.6 Crear un nuevo pipeline con el editor clásico. Descargar el resultado del pipeline y correr localmente el software compilado.
+
+![image](https://github.com/user-attachments/assets/f50bffed-2a73-447e-ac5b-ff51eca7d4aa)
+
+![image](https://github.com/user-attachments/assets/082d4775-a46d-46a4-9a85-a5c40a8e0fe3)
+
+![image](https://github.com/user-attachments/assets/373f7900-e621-43fb-95c3-9286b119ba50)
+
+![image](https://github.com/user-attachments/assets/7c0c102e-85ec-4b19-94d8-1468bc8c57f6)
+
+
 4.7 Configurar CI en ambos pipelines (YAML y Classic Editor). Mostrar resultados de la ejecución automática de ambos pipelines al hacer un commit en la rama main.
 4.8 Explicar la diferencia entre un agente MS y un agente Self-Hosted. Qué ventajas y desventajas hay entre ambos? Cuándo es conveniente y/o necesario usar un Self-Hosted Agent?
 4.8 Crear un Pool de Agentes y un Agente Self-Hosted
