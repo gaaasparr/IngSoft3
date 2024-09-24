@@ -78,6 +78,12 @@ Vemos como automaticamente se estaban actualizando ambos pipelines
 
 4.8 Explicar la diferencia entre un agente MS y un agente Self-Hosted. Qué ventajas y desventajas hay entre ambos? Cuándo es conveniente y/o necesario usar un Self-Hosted Agent?
 
+
+Un agente de Microsoft (MS) es una máquina virtual preconfigurada y gestionada por Azure DevOps en la nube. Ofrece una configuración rápida y sin necesidad de mantenimiento del hardware, lo que lo hace ideal para proyectos con necesidades comunes. Su desventaja es que tiene limitaciones en la personalización y puede tener tiempos de espera en entornos con alta demanda.
+
+Por otro lado, un agente Self-Hosted es una máquina física o virtual que tú configuras y gestionas. Ofrece mayor control y personalización, siendo útil cuando necesitas herramientas específicas, mayor capacidad de procesamiento o evitar las restricciones de los agentes MS. Sin embargo, requiere más mantenimiento y administración. Es recomendable usar Self-Hosted Agents cuando necesitas integración con infraestructuras locales, recursos especiales o para evitar costos adicionales por tiempo de ejecución.
+
+
 4.8 Crear un Pool de Agentes y un Agente Self-Hosted
 
 4.9 Instalar y correr un agente en nuestra máquina local.
