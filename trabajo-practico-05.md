@@ -5,8 +5,28 @@
 
 Es increible pero no puedo pasar el paso mas simple de validar mi identidad, ya probe con mayusculas, con numeros, sin numeros, con otros mails, con distintas tarjetas.
 
+![image](https://github.com/user-attachments/assets/b6e2ebd3-e6bc-49b3-85ee-483274a3fc22)
+
+Finalmente esta es mi cuenta, pedi toda la informacion de la tarjeta prestada asi que voy a intentar realizear todos los trabajos lo mas rapido posible para eliminar los datos de la tarjeta.
+
 
 4.2. Crear un recurso Web App en Azure Portal y navegar a la url provista
+
+![image](https://github.com/user-attachments/assets/d3492b3e-c8d9-4d51-abd3-b91e94cf9690)
+
+![image](https://github.com/user-attachments/assets/355d3a91-a765-45e5-bc05-5864a29d6a00)
+
+![image](https://github.com/user-attachments/assets/945ad280-d3ac-432e-93ab-68f13c7b1bdd)
+
+Creamos todo segun el paso a paso visto en clase y guardamos el template para mas tarde
+
+![image](https://github.com/user-attachments/assets/05f1a95c-1928-45f4-9c43-71ab169332b1)
+
+![image](https://github.com/user-attachments/assets/7b2cb7fe-3a1d-4999-87bb-f6564a0d87ba)
+
+
+
+
 
 4.3. Actualizar Pipeline de Build para que use tareas de DotNetCoreCLI@2 como en el pipeline clásico, luego crear un Pipeline de Release en Azure DevOps con CD habilitada
 
