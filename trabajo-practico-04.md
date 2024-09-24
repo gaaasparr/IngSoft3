@@ -130,12 +130,32 @@ Nos encontramos con este problema que no llegue a solucionar a tiempo antes del 
 
 ![image](https://github.com/user-attachments/assets/fbbf0075-8bcd-4545-8391-42a09faf4020)
 
+![image](https://github.com/user-attachments/assets/115a79d4-3f90-4c8f-83a2-a012ae9b1637)
+
+
 
 4.15 Hacer un cambio a un archivo del proyecto (algún cambio en el HTML que se renderiza por ejemplo) y verificar que se ejecute automáticamente el pipeline.
 
+![image](https://github.com/user-attachments/assets/79c71a6a-fa09-4910-8636-1f82637c3a29)
+
+![image](https://github.com/user-attachments/assets/492c34df-5ad9-4c61-a8ea-909d8069aead)
+
+![image](https://github.com/user-attachments/assets/7331999a-35ca-4fd1-9521-378846d084b0)
+
+
 4.16 Descargar el resultado del pipeline y correr en un servidor web local el sitio construido.
 
+![image](https://github.com/user-attachments/assets/b8057b39-1c85-448b-8e25-9ed1dbedfdf8)
+
+![image](https://github.com/user-attachments/assets/ad19fef8-f726-4333-a004-a9024aa0cc7b)
+
+Podemos ver que cambio el footer
+
 4.17 Mostrar el antes y el después del cambio.
+
+
+![image](https://github.com/user-attachments/assets/2f0d4b82-93f6-454d-a413-083c1a8747df)
+
 
 
 
