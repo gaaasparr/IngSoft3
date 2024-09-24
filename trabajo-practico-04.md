@@ -86,6 +86,8 @@ Por otro lado, un agente Self-Hosted es una máquina física o virtual que tú c
 
 4.8 Crear un Pool de Agentes y un Agente Self-Hosted
 
+![image](https://github.com/user-attachments/assets/db3d9bb0-6f45-4a23-b48e-5d86e321ebbe)
+
 4.9 Instalar y correr un agente en nuestra máquina local.
 
 4.10 Crear un pipeline que use el agente Self-Hosted alojado en nuestra máquina local.
@@ -100,6 +102,12 @@ Por otro lado, un agente Self-Hosted es una máquina física o virtual que tú c
 ![image](https://github.com/user-attachments/assets/4540502a-81f3-4603-855b-a3c992b4d5dc)
 
 4.11 Buscar el resultado del pipeline y correr localmente el software compilado.
+
+![image](https://github.com/user-attachments/assets/8cb7f81e-a4a9-4a1c-874f-d411a07a8f0e)
+
+![image](https://github.com/user-attachments/assets/5452d490-4b33-46c7-81e7-6ff7a205872c)
+
+
 
 4.12 Crear un nuevo proyecto en ADO clonado desde un repo que contenga una aplicación en Angular como por ejemplo https://github.com/ingsoft3ucc/angular-demo-project.git
 
