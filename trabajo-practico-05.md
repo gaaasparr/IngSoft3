@@ -24,11 +24,18 @@ Creamos todo segun el paso a paso visto en clase y guardamos el template para ma
 
 ![image](https://github.com/user-attachments/assets/7b2cb7fe-3a1d-4999-87bb-f6564a0d87ba)
 
+![image](https://github.com/user-attachments/assets/9bd9a87f-eae2-4727-bf4f-01dc2828440f)
 
+Obtuvimos el siguiente problema al querer chequear el funcionamiento de la web, pero luego reonfiguré el DNS y funcionó
 
+![image](https://github.com/user-attachments/assets/db91c838-4370-48ef-bca7-ab00a6a7dc22)
+
+![image](https://github.com/user-attachments/assets/ee295692-d8da-4c2e-b9a5-9453be23fbb7)
 
 
 4.3. Actualizar Pipeline de Build para que use tareas de DotNetCoreCLI@2 como en el pipeline clásico, luego crear un Pipeline de Release en Azure DevOps con CD habilitada
+
+
 
 4.4. Optimizar Pipeline de Build
 
