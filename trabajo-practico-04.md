@@ -95,9 +95,8 @@ Por otro lado, un agente Self-Hosted es una máquina física o virtual que tú c
 
 ![image](https://github.com/user-attachments/assets/99bae89f-43b9-4285-b69c-84ad773cb81f)
 
-![image](https://github.com/user-attachments/assets/e2a92eda-89ad-460e-8cba-eebb5744f01c)
+![image](https://github.com/user-attachments/assets/fd86aa97-a2df-4a7b-8378-ed7e51f1d493)
 
-![image](https://github.com/user-attachments/assets/2fe4e5b7-fe99-4bda-94da-d7a7a9ef8d4f)
 
 ![image](https://github.com/user-attachments/assets/4540502a-81f3-4603-855b-a3c992b4d5dc)
 
