@@ -95,16 +95,20 @@ Por otro lado, un agente Self-Hosted es una máquina física o virtual que tú c
 
 ![image](https://github.com/user-attachments/assets/99bae89f-43b9-4285-b69c-84ad773cb81f)
 ![image](https://github.com/user-attachments/assets/3101fab9-2376-4005-bda6-912ba62ce526)
+![image](https://github.com/user-attachments/assets/5f772f5d-592c-455c-b69a-5f7f157315e2)
 
-
-
-![image](https://github.com/user-attachments/assets/4540502a-81f3-4603-855b-a3c992b4d5dc)
 
 4.11 Buscar el resultado del pipeline y correr localmente el software compilado.
 
-![image](https://github.com/user-attachments/assets/8cb7f81e-a4a9-4a1c-874f-d411a07a8f0e)
+![image](https://github.com/user-attachments/assets/469bdb20-2986-4a3e-a3a9-7d6ba4dfba39)
 
-![image](https://github.com/user-attachments/assets/5452d490-4b33-46c7-81e7-6ff7a205872c)
+Nos encontramos con este problema que no llegue a solucionar a tiempo antes del 24?09 a las 23:59
+![image](https://github.com/user-attachments/assets/2f0b075d-b622-45e8-85e0-2dab06681320)
+![image](https://github.com/user-attachments/assets/fdb9e14a-6937-4361-9589-7805e535f689)
+
+
+
+
 
 
 
