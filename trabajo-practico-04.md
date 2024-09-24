@@ -153,6 +153,7 @@ Podemos ver que cambio el footer
 
 4.17 Mostrar el antes y el después del cambio.
 
+![image](https://github.com/user-attachments/assets/11b174be-60b0-4c92-9e69-d3f5df90e93a)
 
 ![image](https://github.com/user-attachments/assets/2f0d4b82-93f6-454d-a413-083c1a8747df)
 
