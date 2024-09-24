@@ -22,8 +22,15 @@ La tarea de Publish en un pipeline que corre en un agente de Microsoft en la nub
 ![image](https://github.com/user-attachments/assets/ea98f9f3-d1d4-4167-b372-d7fc8e99983a)
 
 
-Una vez descargado, corremos localmente
+Una vez descargado, corremos localmente. Estuve varias horas luchando para que funcione hasta que en algun foro perdido en intener encontre que simplemente modificando el archivo runtime.json podia hacer que se adapte a la version manualmente.
 
+![image](https://github.com/user-attachments/assets/3f0d57b8-0239-43d2-aa4f-247ce8c651c3)
+
+![image](https://github.com/user-attachments/assets/82085250-bd37-4563-9f6c-f876b2aa0cd0)
+
+![image](https://github.com/user-attachments/assets/5819d709-cdcb-4b81-8891-35872c8f9338)
+
+![image](https://github.com/user-attachments/assets/853b10af-3ebe-4d48-8cb0-41d5abdb1c83)
 
 
 
