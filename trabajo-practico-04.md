@@ -74,8 +74,6 @@ Vemos como automaticamente se estaban actualizando ambos pipelines
 ![image](https://github.com/user-attachments/assets/7c646e7c-804d-4e8c-8166-facb4d2e70be)
 
 
-
-
 4.8 Explicar la diferencia entre un agente MS y un agente Self-Hosted. Qué ventajas y desventajas hay entre ambos? Cuándo es conveniente y/o necesario usar un Self-Hosted Agent?
 
 
@@ -114,9 +112,24 @@ Nos encontramos con este problema que no llegue a solucionar a tiempo antes del 
 
 4.12 Crear un nuevo proyecto en ADO clonado desde un repo que contenga una aplicación en Angular como por ejemplo https://github.com/ingsoft3ucc/angular-demo-project.git
 
+![image](https://github.com/user-attachments/assets/da0fc004-fc78-450d-bb78-669001bb6a02)
+
+![image](https://github.com/user-attachments/assets/7e3fd8e3-372e-4362-a852-105415302d45)
+
+![image](https://github.com/user-attachments/assets/42de8bc4-a940-4783-92e2-4cc1d6ff3890)
+
+
 4.13 Configurar un pipeline de build para un proyecto de tipo Angular como el clonado.
+![image](https://github.com/user-attachments/assets/06a35f7e-f6f5-4694-b76e-923cf3cfb801)
+
+
+![image](https://github.com/user-attachments/assets/875a7ef1-27b2-42dd-9455-c7c576ec7eed)
+
 
 4.14 Habilitar CI para el pipeline.
+
+![image](https://github.com/user-attachments/assets/fbbf0075-8bcd-4545-8391-42a09faf4020)
+
 
 4.15 Hacer un cambio a un archivo del proyecto (algún cambio en el HTML que se renderiza por ejemplo) y verificar que se ejecute automáticamente el pipeline.
 
