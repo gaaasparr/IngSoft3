@@ -45,6 +45,9 @@ De manera muy resumida: El editor clásico es más sencillo de usar, pero YAML o
 
 ![image](https://github.com/user-attachments/assets/7c0c102e-85ec-4b19-94d8-1468bc8c57f6)
 
+![image](https://github.com/user-attachments/assets/c79b3016-6519-46eb-8b3c-a64e216963de)
+
+
 
 4.7 Configurar CI en ambos pipelines (YAML y Classic Editor). Mostrar resultados de la ejecución automática de ambos pipelines al hacer un commit en la rama main.
 
