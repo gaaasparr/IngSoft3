@@ -1,6 +1,11 @@
 4- Desarrollo:
 4.1. Crear una cuenta en Azure
 
+![image](https://github.com/user-attachments/assets/346dd8d3-ddd0-44b8-a9b6-34f9b9990a85)
+
+Es increible pero no puedo pasar el paso mas simple de validar mi identidad, ya probe con mayusculas, con numeros, sin numeros, con otros mails, con distintas tarjetas.
+
+
 4.2. Crear un recurso Web App en Azure Portal y navegar a la url provista
 
 4.3. Actualizar Pipeline de Build para que use tareas de DotNetCoreCLI@2 como en el pipeline clásico, luego crear un Pipeline de Release en Azure DevOps con CD habilitada
