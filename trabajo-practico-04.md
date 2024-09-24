@@ -46,13 +46,12 @@ De manera muy resumida: El editor clásico es más sencillo de usar, pero YAML o
 
 ![image](https://github.com/user-attachments/assets/f50bffed-2a73-447e-ac5b-ff51eca7d4aa)
 
-![image](https://github.com/user-attachments/assets/082d4775-a46d-46a4-9a85-a5c40a8e0fe3)
+![image](https://github.com/user-attachments/assets/f815e95c-8cad-4d04-a820-98519c807053)
 
-![image](https://github.com/user-attachments/assets/373f7900-e621-43fb-95c3-9286b119ba50)
+![image](https://github.com/user-attachments/assets/7c43a0e2-beff-42b6-b832-3ffdf9e6823b)
 
-![image](https://github.com/user-attachments/assets/7c0c102e-85ec-4b19-94d8-1468bc8c57f6)
+![image](https://github.com/user-attachments/assets/27319ca2-9fd0-452c-8052-b244bd8f4bdd)
 
-![image](https://github.com/user-attachments/assets/c79b3016-6519-46eb-8b3c-a64e216963de)
 
 
 
