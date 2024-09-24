@@ -60,6 +60,22 @@ De manera muy resumida: El editor clásico es más sencillo de usar, pero YAML o
 
 4.7 Configurar CI en ambos pipelines (YAML y Classic Editor). Mostrar resultados de la ejecución automática de ambos pipelines al hacer un commit en la rama main.
 
+Primero configuro CI en el pipeline hecho con el editor clasico y luego en el YAML
+![image](https://github.com/user-attachments/assets/e6ffc21d-1794-474c-8a8c-51a954ebd452)
+
+![image](https://github.com/user-attachments/assets/855fec93-81d4-43f3-8e86-8a2da29f02cf)
+
+![image](https://github.com/user-attachments/assets/6710f3b6-d5d0-4c42-b5fc-70181cd2d3df)
+
+Vemos como automaticamente se estaban actualizando ambos pipelines
+
+![image](https://github.com/user-attachments/assets/1a8dfb11-bc7c-495f-b135-043f123362a9)
+
+![image](https://github.com/user-attachments/assets/7c646e7c-804d-4e8c-8166-facb4d2e70be)
+
+
+
+
 4.8 Explicar la diferencia entre un agente MS y un agente Self-Hosted. Qué ventajas y desventajas hay entre ambos? Cuándo es conveniente y/o necesario usar un Self-Hosted Agent?
 
 4.8 Crear un Pool de Agentes y un Agente Self-Hosted
