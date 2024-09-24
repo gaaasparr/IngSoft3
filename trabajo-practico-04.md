@@ -21,9 +21,9 @@ La tarea de Publish en un pipeline que corre en un agente de Microsoft en la nub
 
 ![image](https://github.com/user-attachments/assets/ea98f9f3-d1d4-4167-b372-d7fc8e99983a)
 
-![image](https://github.com/user-attachments/assets/8aaa506d-84f2-4f79-8056-05c86e9bd5ec)
 
 Una vez descargado, corremos localmente
+
 
 
 
