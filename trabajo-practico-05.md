@@ -7,8 +7,7 @@ Es increible pero no puedo pasar el paso mas simple de validar mi identidad, ya 
 
 ![image](https://github.com/user-attachments/assets/b6e2ebd3-e6bc-49b3-85ee-483274a3fc22)
 
-Finalmente esta es mi cuenta, pedi toda la informacion de la tarjeta prestada asi que voy a intentar realizear todos los trabajos lo mas rapido posible para eliminar los datos de la tarjeta.
-
+Finalmente esta es mi cuenta, pedi toda la información de la tarjeta prestada.
 
 4.2. Crear un recurso Web App en Azure Portal y navegar a la url provista
 
@@ -58,11 +57,11 @@ El codigo ya está optimizado en el material brindado
 ![image](https://github.com/user-attachments/assets/71240594-0614-42b7-9536-615fb5240d3a)
 
 
-
-
 4.5. Verificar el deploy en la url de la WebApp /weatherforecast
 
 4.6. Realizar un cambio al código del controlador para que devuelva 7 pronósticos, realizar commit, evaluar ejecución de pipelines de build y release, navegar a la url de la webapp/weatherforecast y corroborar cambio
+
+
 
 4.7. Clonar la Web App de QA para que contar con una WebApp de PROD a partir de un Template Deployment en Azure Portal y navegar a la url provista para la WebApp de PROD.
 
