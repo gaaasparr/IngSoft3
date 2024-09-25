@@ -35,9 +35,30 @@ Obtuvimos el siguiente problema al querer chequear el funcionamiento de la web, 
 
 4.3. Actualizar Pipeline de Build para que use tareas de DotNetCoreCLI@2 como en el pipeline clásico, luego crear un Pipeline de Release en Azure DevOps con CD habilitada
 
+Copie el codigo brindado en clases en el YAML de Sample 02 y corrio todo perfecto
 
+![image](https://github.com/user-attachments/assets/1e7e5540-71fa-4b98-a2bc-c9841a92c33e)
+
+Luego active el pipeline release manual
+
+![image](https://github.com/user-attachments/assets/74488d00-21d5-47bd-bb12-9e39206107db)
+
+![image](https://github.com/user-attachments/assets/211865e5-efe2-4cd8-8ed2-c590404348bf)
+
+![image](https://github.com/user-attachments/assets/c8a96e95-fda8-470a-81bf-d3563936da68)
+
+Tuve un problema ya que la ceutna que cree con la tarjeta que me prestaron no es la misma que donde realice el trabajo 4 entonces no encuentra mis subscripción.
+
+![image](https://github.com/user-attachments/assets/c424ee3c-a74d-475a-9236-c6b7e50f425c)
 
 4.4. Optimizar Pipeline de Build
+
+El codigo ya está optimizado en el material brindado
+
+![image](https://github.com/user-attachments/assets/71240594-0614-42b7-9536-615fb5240d3a)
+
+
+
 
 4.5. Verificar el deploy en la url de la WebApp /weatherforecast
 
