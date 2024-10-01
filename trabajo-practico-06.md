@@ -134,3 +134,141 @@ N. Verificar que nuestro proyecto vuelve a tener acceso a la BD navegando a http
 
 ![image](https://github.com/user-attachments/assets/fb544951-4056-4779-8a40-2dc02393f548)
 
+4.4 Creamos pruebas unitarias para nuestro front de Angular:
+A. Nos posicionamos en nuestro proyecto de front, en el directorio EmployeeCrudAngular/src/app
+
+![image](https://github.com/user-attachments/assets/e82c5cf4-77d5-4e04-81f7-a52e6d246e66)
+
+
+B. Editamos el archivo app.component.spec.ts reemplazando su contenido por:
+
+![image](https://github.com/user-attachments/assets/25021c86-f1e4-4f69-a265-dc84eaa46380)
+
+
+C. Creamos el archivo employee.service.spec.ts reemplazando su contenido por:
+
+![image](https://github.com/user-attachments/assets/6723bf1a-10ef-489f-9b84-b1a65e7e4b3f)
+
+
+D. Editamos el archivo employee.component.spec.ts ubicado en la carpeta employee reemplazando su contenido por:
+
+![image](https://github.com/user-attachments/assets/01c4fa81-e3cb-422b-8958-b9392ee225cd)
+
+
+E. Editamos el archivo addemployee.component.spec.ts ubicado en la carpeta addemployee reemplazando su contenido por:
+
+![image](https://github.com/user-attachments/assets/f7dd09e7-6fa2-42a5-9a37-1d509c26167c)
+
+
+
+F. En el directorio raiz de nuestro proyecto EmployeeCrudAngular ejecutamos el comando ng test
+
+![image](https://github.com/user-attachments/assets/90da8d75-4be3-4d1b-82b6-23191e386ec1)
+
+No funciona porque no tengo chrome instalado enn mi PC, asi que lo descargamos y continuamos
+
+G. Vemos que se abre una ventana de Karma con Jasmine en la que nos indica que los tests se ejecutaron correctamente
+
+![image](https://github.com/user-attachments/assets/37bb3080-b0e4-4496-90cf-630943a81a47)
+
+
+H. Vemos que los tests se ejecutaron correctamente:
+
+![image](https://github.com/user-attachments/assets/8d5d102a-3f97-420e-a7ab-3cde4f04c87f)
+
+
+I. Verificamos que no esté corriendo nuestra API navegando a http://localhost:7150/swagger/index.html y recibiendo esta salida:
+
+![image](https://github.com/user-attachments/assets/3944de91-de57-460e-99c9-e8763239b375)
+
+
+J. Los puntos G y H nos indican que se han ejecutado correctamente las pruebas inclusive sin tener acceso a la API, lo que confirma que es efectivamente un conjunto de pruebas unitarias que no requieres de una dependencia externa para funcionar.
+
+4.5 Agregamos generación de reporte XML de nuestras pruebas de front.
+Para cuando integremos nuestras pruebas en un pipeline de Build, vamos a necesitar el resultado devuelto por nuestras pruebas para reportarlas junto a las pruebas de back que se reportan automaticamente.
+
+A. Instalamos dependencia karma-junit-reporter
+
+![image](https://github.com/user-attachments/assets/2113fb23-ccc7-4eee-8b46-fbec373adde1)
+
+
+B. En el directorio raiz de nuestro proyecto (al mismo nivel que el archivo angular.json) creamos un archivo karma.conf.js con el siguiente contenido
+
+
+
+C. Ejecutamos nuestros test de la siguiente manera:
+
+
+
+D. Verificamos que se creo un archivo test-result.xml en el directorio test-results que está al mismo nivel que el directorio src
+
+
+
+4.6 Modificamos el código de nuestra API y creamos nuevas pruebas unitarias:
+A. Realizar al menos 5 de las siguientes modificaciones sugeridas al código de la API:
+
+La longitud máxima del nombre y apellido del empleado debe ser de 100 caracteres.
+Validar que el nombre tenga un número mínimo de caracteres, por ejemplo, al menos dos caracteres para evitar entradas inválidas como "A".
+Verificar que el nombre no contenga números, ya que no es común en los nombres de empleados.
+Verificar que no haya palabras vacías o que el nombre no esté compuesto solo de espacios.
+Asegurar que cada parte del nombre (separada por espacios) tenga al menos un carácter o más, por ejemplo, para evitar "A B".
+En todos los casos donde no se cumplan las condiciones, la API debe devolver un error de HTTP 400 Bad Request y un Json indicando el error, por ejemplo: { "status": 400, "error": "Bad Request", "message": "El nombre del empleado ya existe." }
+
+
+
+B. Crear las pruebas unitarias necesarias para validar las modificaciones realizadas en el código
+
+Creamos las pruebas para cada uno de los 5 escenarios
+
+
+
+
+
+
+
+Buildeamos los test y los corremos
+
+
+
+4.7 Modificamos el código de nuestro Front y creamos nuevas pruebas unitarias:
+A. Realizar en el código del front las mismas modificaciones hechas a la API. B. Las validaciones deben ser realizadas en el front sin llegar a la API, y deben ser mostradas en un toast como por ejemplo https://stackblitz.com/edit/angular12-toastr?file=src%2Fapp%2Fapp.component.ts o https://stackblitz.com/edit/angular-error-toast?file=src%2Fapp%2Fcore%2Frxjsops.ts
+
+Instalamos la libreria de toast
+
+
+
+Abrimos el archivo src/app/app.config.ts y agregamos las importaciones necesarias para ToastrModule y BrowserAnimationsModule.
+
+
+
+Tambien importamos el css con los estilos de los toast
+
+
+
+Agregamos las validaciones en AddEmployee y las probamos
+
+
+
+
+
+
+
+
+
+
+
+
+
+C. Crear las pruebas unitarias necesarias en el front para validar las modificaciones realizadas en el código del front.
+
+Creamos las pruebas unitarias en addemployee.component.spec
+
+
+
+Las ejecutamos exitosamente
+
+ 
+
+6. Subir el proyecto
+Link a repo: https://github.com/cettipao/AngularCrud-UnitTests
+
