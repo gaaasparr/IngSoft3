@@ -41,7 +41,8 @@ Construimos la api y verificamos que funcione
 
 Construimos el CRUD angular y verificamos que funcione
 
- ![Captura desde 2024-09-30 20-26-42](https://github.com/user-attachments/assets/fa228cca-1a49-4e48-9951-1f9808f38124)
+![Captura desde 2024-09-30 20-23-49](https://github.com/user-attachments/assets/4f108dd5-ddfa-4e5a-8798-30dad896b2c7)
+
 
 ![Captura desde 2024-09-30 22-57-14](https://github.com/user-attachments/assets/674d3b5e-e480-4b16-a505-f8c1c07882b8)
 
