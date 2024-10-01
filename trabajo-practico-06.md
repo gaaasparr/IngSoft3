@@ -194,13 +194,21 @@ A. Instalamos dependencia karma-junit-reporter
 
 B. En el directorio raiz de nuestro proyecto (al mismo nivel que el archivo angular.json) creamos un archivo karma.conf.js con el siguiente contenido
 
+![image](https://github.com/user-attachments/assets/f5b515de-bb67-4970-9b36-cbd490de2c56)
+
+![image](https://github.com/user-attachments/assets/23463f7c-7cda-4abe-8762-218cc12e7b48)
+
 
 
 C. Ejecutamos nuestros test de la siguiente manera:
 
+![image](https://github.com/user-attachments/assets/f2d2e001-cc42-4cda-9971-21131b374ff2)
+
 
 
 D. Verificamos que se creo un archivo test-result.xml en el directorio test-results que está al mismo nivel que el directorio src
+
+![image](https://github.com/user-attachments/assets/94f0a285-769b-44c4-a4ef-e25869d11a7b)
 
 
 
