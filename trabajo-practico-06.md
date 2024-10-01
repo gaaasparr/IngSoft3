@@ -260,7 +260,8 @@ ESTE ES EL COODIGO DEFINITIVO OPTIMIZADO
 
 ahora mucho mejor, solo dos tests estan fallando
 
-![image](https://github.com/user-attachments/assets/1177c4c3-fa80-49dd-8f29-c47f69d08ac1)
+![image](https://github.com/user-attachments/assets/3c45b16e-2043-4f1f-9c4b-1834fa290f6c)
+
 
 Todo funcionando, al final del proyecto dejo adjuntados los archivos employeecontroller.cs y employeeControllerUnitTests.cs
 
