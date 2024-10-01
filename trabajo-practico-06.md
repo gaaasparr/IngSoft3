@@ -80,7 +80,7 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory
 
 C. Editar archivo UnitTest1.cs 
 
-![Captura desde 2024-09-30 21-40-33](https://github.com/user-attachments/assets/29c9d4a0-115d-4516-b546-406f9178721c)
+Editamos el archivo con el codigo proporcionado en el desarrollo del TP
 
 
 D. Renombrar archivo UnitTest1.cs por EmployeeControllerUnitTests.cs
