@@ -262,10 +262,11 @@ ahora mucho mejor, solo dos tests estan fallando
 ![image](https://github.com/user-attachments/assets/04fe33bd-d917-4da5-9f0e-385c46c2d919)
 
 
-![image](https://github.com/user-attachments/assets/3c45b16e-2043-4f1f-9c4b-1834fa290f6c)
+Pasan 4 tests y el del metodo 
+[HttpPost]
+public async Task<ActionResult<Employee>> Create(Employee employee)
 
-
-Todo funcionando, al final del proyecto dejo adjuntados los archivos employeecontroller.cs y employeeControllerUnitTests.cs
+no para de traer inconvenientes, al final del proyecto dejo adjuntados los archivos employeecontroller.cs y employeeControllerUnitTests.cs
 
 
 4.7 Modificamos el código de nuestro Front y creamos nuevas pruebas unitarias:
