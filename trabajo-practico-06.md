@@ -127,5 +127,10 @@ L. Verificar que se hayan ejecutado correctamente las pruebas inclusive sin tene
 M. Modificar la cadena de conexión en el archivo appsettings.json para que use el usuario y password correcto y recompilar el proyecto EmployeeCrudApi
 
 
+![Captura desde 2024-09-30 20-18-48](https://github.com/user-attachments/assets/e1150fe0-f6a0-4e9c-93fd-8163caa3ec2b)
+
 
 N. Verificar que nuestro proyecto vuelve a tener acceso a la BD navegando a http://localhost:7150/swagger/index.html y probando uno de los controladores:
+
+![image](https://github.com/user-attachments/assets/fb544951-4056-4779-8a40-2dc02393f548)
+
