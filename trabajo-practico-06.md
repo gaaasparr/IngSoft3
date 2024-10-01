@@ -13,14 +13,15 @@ B. En caso de optar por la opción de montar la img/imagen de docker, una vez le
 
 Ejecutamos el script (cambie GO por ";")
 
-file:///home/gaspar/Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202024-09-30%2019-52-45.png
+
+![Captura desde 2024-09-30 19-52-45](https://github.com/user-attachments/assets/42c9769d-dc80-488c-bda0-ac5b2303b8e6)
 
 
 
 4.2 Obtener nuestra App
 A. Clonar el repo https://github.com/ingsoft3ucc/Angular_WebAPINetCore8_CRUD_Sample.git
 
-file:///home/gaspar/Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202024-09-30%2020-18-48.png
+![Captura desde 2024-09-30 20-01-04](https://github.com/user-attachments/assets/9ca8e544-7ee6-45a6-a6cd-e48ac2e2854a)
 
 
 B. Seguir las instrucciones del README.md del repo clonado prestando atención a la modificación de la cadena de conexión en el appSettings.json para que apunte a la BD creada en 4.1
@@ -31,7 +32,7 @@ Le cambiamos la cadena de conexion para que apunte a nuestra db
 
 Construimos la api y verificamos que funcione
 
- file:///home/gaspar/Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202024-09-30%2020-20-38.png
+
 
 
 Construimos el CRUD angular y verificamos que funcione
