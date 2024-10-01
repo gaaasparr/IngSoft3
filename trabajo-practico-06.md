@@ -43,8 +43,8 @@ Construimos el CRUD angular y verificamos que funcione
 
 ![Captura desde 2024-09-30 20-23-49](https://github.com/user-attachments/assets/4f108dd5-ddfa-4e5a-8798-30dad896b2c7)
 
+![Captura desde 2024-09-30 20-26-42](https://github.com/user-attachments/assets/6165713e-c732-46ce-8879-d0abd0723f2d)
 
-![Captura desde 2024-09-30 22-57-14](https://github.com/user-attachments/assets/674d3b5e-e480-4b16-a505-f8c1c07882b8)
 
 
 C. Navegar a http://localhost:7150/swagger/index.html y probar uno de los controladores para verificar el correcto funcionamiento de la API.
@@ -62,12 +62,13 @@ D. Navegar a http://localhost:4200 y verificar el correcto funcionamiento de nue
 
 E. Una vez verificado el correcto funcionamiento de la Aplicación procederemos a crear un proyecto de pruebas unitarias para nuestra API.
 
+![Captura desde 2024-09-30 21-08-18](https://github.com/user-attachments/assets/e81a2c97-8ace-4368-9bb9-c84dfa1a812b)
 
 
 4.3 Crear Pruebas Unitarias para nuestra API
 A. En el directorio raiz de nuestro repo crear un nuevo proyecto de pruebas unitarias para nuestra API
 
-![Captura desde 2024-09-30 20-26-42](https://github.com/user-attachments/assets/1f1d3fef-ffd6-47f5-9e9d-0c5aed20c299)
+
 
 
 Instalamos las dependencias
