@@ -215,26 +215,52 @@ D. Verificamos que se creo un archivo test-result.xml en el directorio test-resu
 4.6 Modificamos el código de nuestra API y creamos nuevas pruebas unitarias:
 A. Realizar al menos 5 de las siguientes modificaciones sugeridas al código de la API:
 
-La longitud máxima del nombre y apellido del empleado debe ser de 100 caracteres.
-Validar que el nombre tenga un número mínimo de caracteres, por ejemplo, al menos dos caracteres para evitar entradas inválidas como "A".
-Verificar que el nombre no contenga números, ya que no es común en los nombres de empleados.
-Verificar que no haya palabras vacías o que el nombre no esté compuesto solo de espacios.
-Asegurar que cada parte del nombre (separada por espacios) tenga al menos un carácter o más, por ejemplo, para evitar "A B".
-En todos los casos donde no se cumplan las condiciones, la API debe devolver un error de HTTP 400 Bad Request y un Json indicando el error, por ejemplo: { "status": 400, "error": "Bad Request", "message": "El nombre del empleado ya existe." }
+Escenarios a probar:
+Validar que el nombre no esté repetido.
+Verificar que el nombre no tenga más de 100 caracteres.
+Verificar el formateo correcto del nombre (primera letra de cada nombre en mayúscula y el apellido en mayúsculas).
+Verificar que el nombre no contenga caracteres especiales o números.
+Verificar que el nombre no sea trivial o genérico.
 
-
+![image](https://github.com/user-attachments/assets/73c1a649-63a6-4d35-ab0b-b541703b98dc)
 
 B. Crear las pruebas unitarias necesarias para validar las modificaciones realizadas en el código
 
 Creamos las pruebas para cada uno de los 5 escenarios
 
+![image](https://github.com/user-attachments/assets/1f670f20-180f-47ea-a9a2-2009ccaefad7)
 
+![image](https://github.com/user-attachments/assets/b9e13388-563c-4f31-91bf-7874d46ae02a)
 
+![image](https://github.com/user-attachments/assets/60b84437-d9f1-4a97-a013-0218aab5efba)
 
 
 
 
 Buildeamos los test y los corremos
+![image](https://github.com/user-attachments/assets/19564454-c6e9-4bab-a40a-b67a8564d70b)
+
+hay errores asi que nos ponemos a ver que pasa hasta que se solucionen esos errores, con las advertencias creoq ue podemos seguir operando.
+
+
+![image](https://github.com/user-attachments/assets/602aefad-3906-4a5f-a47a-af37aa827582)
+
+![image](https://github.com/user-attachments/assets/b5de135e-833e-426b-b883-227ef782a5c0)
+
+Cuando corremos los tests tambien explota todo asi que nos ponemos a modificar uno por uno.
+
+ESTE ES EL COODIGO DEFINITIVO OPTIMIZADO
+
+![image](https://github.com/user-attachments/assets/ccb60697-ce0d-4af9-b15e-5748a05f9618)
+
+
+![image](https://github.com/user-attachments/assets/19b9e5f3-9ac9-4c4f-8c54-fae12ac8d1a4)
+
+![image](https://github.com/user-attachments/assets/a3be44e5-1a85-4fb8-b6aa-ee6908ee72ac)
+
+ahora mucho mejor, solo dos tests estan fallando
+
+
 
 
 
@@ -254,15 +280,6 @@ Tambien importamos el css con los estilos de los toast
 
 
 Agregamos las validaciones en AddEmployee y las probamos
-
-
-
-
-
-
-
-
-
 
 
 
