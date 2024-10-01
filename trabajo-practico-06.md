@@ -260,8 +260,9 @@ ESTE ES EL COODIGO DEFINITIVO OPTIMIZADO
 
 ahora mucho mejor, solo dos tests estan fallando
 
+![image](https://github.com/user-attachments/assets/1177c4c3-fa80-49dd-8f29-c47f69d08ac1)
 
-
+Todo funcionando, al final del proyecto dejo adjuntados los archivos employeecontroller.cs y employeeControllerUnitTests.cs
 
 
 4.7 Modificamos el código de nuestro Front y creamos nuevas pruebas unitarias:
