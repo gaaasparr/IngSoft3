@@ -1,86 +1,102 @@
-![image](https://github.com/user-attachments/assets/3e309940-512f-47a9-801f-f020bca4fea8)
 4- Desarrollo:
-Prerequisitos:
-4.1 Agregar Code Coverage a nuestras pruebas unitarias de backend y front-end e integrarlas junto con sus resultados en nuestro pipeline de build.
-Desarrollo del punto 4.1:
+ Una vez corridos todos los comandos de los prerequisitos arrancamos
 
-![image](https://github.com/user-attachments/assets/3e309940-512f-47a9-801f-f020bca4fea8)
+ 4.1 Creación de una BD SQL Server para nuestra App
+A. Montar una img/imagen Docker de SQL Server 
 
-4.1.3 En el dir raiz del proyecto EmployeeCrudApi.Tests ejecutar:
-dotnet add package coverlet.collector
-4.1.4 Agregar a nuestro pipeline ANTES del Build de Back la tarea de test con los argumentos especificados y la de publicación de resultados de cobertura:
+Uso mi contenedor de docker 
 
-4.1.5 Agregar a nuestro pipeline ANTES del Build de front la tarea de test y la de publicación de los resultados.
+![Captura desde 2024-09-30 19-42-22](https://github.com/user-attachments/assets/e56af2f0-ec42-465e-83ab-d8ca0d784ebb)
 
-4.1.6 Ejecutar el pipeline y analizar el resultado de las pruebas unitarias y la cobertura de código.
 
-4.2 Agregar Análisis Estático de Código con SonarCloud:
-SonarCloud https://www.sonarsource.com/products/sonarcloud/ es una plataforma de análisis de calidad de código basada en la nube que ayuda a los equipos de desarrollo a detectar errores, vulnerabilidades de seguridad, malas prácticas y problemas de mantenibilidad en el código. Proporciona análisis estático de código para múltiples lenguajes, como Java, .NET, JavaScript, TypeScript, Python, y más, ofreciendo métricas detalladas sobre la cobertura de pruebas, duplicación de código, complejidad ciclomatica, y deuda técnica. Además, SonarCloud se integra fácilmente con sistemas de CI/CD y plataformas de control de versiones como GitHub, Azure DevOps y Bitbucket, lo que permite un análisis continuo del código en cada commit o despliegue.
+B. En caso de optar por la opción de montar la img/imagen de docker, una vez levantada el contenedor, conectarse y ejecutar el siguiente script:
 
-La plataforma destaca por ofrecer un tablero interactivo donde se pueden visualizar y priorizar los problemas detectados, facilitando la refactorización y la mejora de la calidad del código. SonarCloud permite a los equipos identificar vulnerabilidades y puntos críticos de seguridad, además de generar informes de cobertura de pruebas automatizadas, ayudando a mantener el código limpio, seguro y fácil de mantener a lo largo del ciclo de vida del desarrollo.
+Ejecutamos el script (cambie GO por ";")
 
-Resumen de Métricas de Calidad de Código en SonarCloud
-Coverage (Cobertura de Código): Mide el porcentaje de código cubierto por pruebas automatizadas.
-Bugs (Errores): Identifica problemas que podrían causar fallos en el código en tiempo de ejecución.
-Vulnerabilities (Vulnerabilidades): Detecta posibles puntos de riesgo que podrían comprometer la seguridad del código.
-Code Smells: Indica malas prácticas o patrones de código que, aunque no causan fallos, afectan la calidad y mantenibilidad.
-Duplications (Duplicación de Código): Mide el porcentaje de código duplicado en el proyecto, lo que afecta la mantenibilidad.
-Maintainability (Mantenibilidad): Evalúa la facilidad con la que el código puede ser modificado o extendido sin introducir nuevos errores.
-Technical Debt (Deuda Técnica): Estima el tiempo necesario para corregir todos los problemas de calidad del código.
-Reliability (Fiabilidad): Mide la probabilidad de que el código funcione sin errores.
-Security Hotspots (Puntos Críticos de Seguridad): Indica áreas del código que deben ser revisadas manualmente por posibles problemas de seguridad.
-Cyclomatic Complexity (Complejidad Ciclomática): Mide el número de caminos lógicos independientes en el código, indicando su complejidad estructural.
-Cognitive Complexity (Complejidad Cognitiva): Evalúa la dificultad de entender el código, considerando aspectos de legibilidad y comprensión.
-Maintainability Rating: Clasifica el proyecto en una escala de A a E según la deuda técnica y la facilidad de mantenimiento.
-Branch Coverage: Mide la cobertura de las ramas de decisión en el código (por ejemplo, en estructuras if, else o switch).
-Complexity per Function: Mide la complejidad promedio de las funciones dentro del proyecto.
-Complexity per Class: Mide la complejidad promedio por clase, ayudando a evaluar la arquitectura y el diseño del sistema.
-Lines of Code (LoC): Cuenta el número total de líneas de código en el proyecto, excluyendo comentarios y espacios en blanco.
-Comment Density (Densidad de Comentarios): Mide el porcentaje de líneas de código que son comentarios, útil para evaluar la documentación interna.
-Issues (Problemas): Cuenta el número total de problemas detectados en el código, que pueden clasificarse como bugs, vulnerabilidades o code smells.
-Security Rating: Proporciona una clasificación general de la seguridad del código, en una escala de A (mejor) a E (peor).
-Reliability Rating: Clasifica la confiabilidad del código en una escala de A a E, basada en la cantidad y gravedad de los errores detectados.
-Security Remediation Effort: Estima el tiempo necesario para resolver todos los problemas de seguridad identificados en el código.
-Uncovered Conditions: Mide el número de condiciones lógicas que no están cubiertas por las pruebas automatizadas.
-Duplicated Blocks: Cuenta los bloques de código que se repiten en el proyecto.
-Unresolved Issues: Indica el número de problemas detectados que aún no han sido resueltos.
-Desarrollo del punto 4.2: Demostración de cómo integrar SonarCloud en un pipeline de CI/CD y cómo leer los reportes de análisis estático.
+file:///home/gaspar/Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202024-09-30%2019-52-45.png
 
-4.2.1 Integraremos SonarCloud para analizar el código fuente. Configurar SonarCloud en nuestro pipeline siguiendo instructivo 5.1
-Antes de nuestra tarea de Build del Back:
 
-    
-    - task: SonarCloudPrepare@2
-      inputs:
-        SonarCloud: 'SonarCloud' #Nombre de nuestra Service Connection a SonarCloud
-        organization: 'ingsoft3ucc'  #Nombre de nuestra organizacion SonarCloud
-        scannerMode: 'MSBuild'
-        projectKey: 'Angular_WebAPINetCore8_CRUD_Sample'  #Key de nuestro proyecto en SonarCloud
-        projectName: 'Angular_WebAPINetCore8_CRUD_Sample' #Nombre de nuestro proyecto en SonarCloud
-      displayName: 'Prepare SonarCloud'
-    
-Despues de nuestra tarea de Build del Back:
 
-  - task: SonarCloudAnalyze@2
-    inputs:
-      jdkversion: 'JAVA_HOME_17_X64'
-    displayName: 'Analyze SonarCloud'
-   
- - task: SonarCloudPublish@2
-   displayName: 'Publish SonarCloud'
-   inputs:
-     pollingTimeoutSec: '300'
-4.2.2 Vemos el resultado de nuestro pipeline, en extensions tenemos un link al análisis realizado por SonarCloud
-image
+4.2 Obtener nuestra App
+A. Clonar el repo https://github.com/ingsoft3ucc/Angular_WebAPINetCore8_CRUD_Sample.git
 
-4.2.3 Ir al link y analizar toda la información obtenida. Detallar en la entrega del TP los puntos más relevantes del informe, qué significan y para qué sirven.
-image
+file:///home/gaspar/Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202024-09-30%2020-18-48.png
 
-4.3 Pruebas de Integración con Cypress:
-Cypress https://www.cypress.io/ es una herramienta de pruebas tanto de integración como unitarias diseñada para probar aplicaciones web. Facilita la escritura, ejecución y depuración de pruebas automáticas en tiempo real dentro del navegador. A diferencia de otras herramientas de pruebas, Cypress se ejecuta directamente en el navegador, lo que le permite interactuar con la página web de manera más eficiente, proporcionando feedback rápido y detallado sobre las pruebas.
 
-Características clave de Cypress:
-Pruebas en tiempo real: Ver los resultados de las pruebas en el navegador mientras se ejecutan.
-Automatización completa del navegador: Cypress controla el navegador para simular la interacción del usuario.
-Rápida retroalimentación: Ideal para desarrollo ágil con integración continua.
-Depuración sencilla: Acceso a capturas de pantalla y videos de las pruebas fallidas.
+B. Seguir las instrucciones del README.md del repo clonado prestando atención a la modificación de la cadena de conexión en el appSettings.json para que apunte a la BD creada en 4.1
+
+Le cambiamos la cadena de conexion para que apunte a nuestra db
+
+
+
+Construimos la api y verificamos que funcione
+
+ file:///home/gaspar/Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202024-09-30%2020-20-38.png
+
+
+Construimos el CRUD angular y verificamos que funcione
+
+ 
+
+C. Navegar a http://localhost:7150/swagger/index.html y probar uno de los controladores para verificar el correcto funcionamiento de la API.
+
+Funciona correctamente, me trae los empleados
+
+
+
+D. Navegar a http://localhost:4200 y verificar el correcto funcionamiento de nuestro front-end Angular
+
+
+
+E. Una vez verificado el correcto funcionamiento de la Aplicación procederemos a crear un proyecto de pruebas unitarias para nuestra API.
+
+4.3 Crear Pruebas Unitarias para nuestra API
+A. En el directorio raiz de nuestro repo crear un nuevo proyecto de pruebas unitarias para nuestra API
+
+
+
+Instalamos las dependencias
+
+cd EmployeeCrudApi.Tests 
+dotnet add package Moq
+dotnet add package xunit
+dotnet add package Microsoft.EntityFrameworkCore.InMemory
+C. Editar archivo UnitTest1.cs reemplazando su contenido por
+
+
+
+D. Renombrar archivo UnitTest1.cs por EmployeeControllerUnitTests.cs
+
+
+
+E. Editar el archivo EmployeeCrudApi.Tests/EmployeeCrudApi.Tests.csproj para agregar una referencia a nuestro proyecto de EmployeeCrudApi reemplazando su contenido por
+
+
+
+F. Ejecutar los siguientes comandos para ejecutar nuestras pruebas G. Verificar que se hayan ejecutado correctamente las pruebas
+
+Se ejecutaron correctamente:
+
+
+
+H. Verificar que no estamos usando una dependencia externa como la base de datos.
+
+I. Modificar la cadena de conexión en el archivo appsettings.json para que use un usuario o password incorrecto y recompilar el proyecto EmployeeCrudApi
+
+
+
+
+
+J. Verificar que nuestro proyecto ya no tiene acceso a la BD navegando a http://localhost:7150/swagger/index.html y probando uno de los controladores:
+
+
+
+K. En la carpeta de nuestro proyecto EmployeeCrudApi.Tests volver a correr las pruebas L. Verificar que se hayan ejecutado correctamente las pruebas inclusive sin tener acceso a la BD, lo que confirma que es efectivamente un conjunto de pruebas unitarias que no requieren de una dependencia externa para funcionar.
+
+
+
+M. Modificar la cadena de conexión en el archivo appsettings.json para que use el usuario y password correcto y recompilar el proyecto EmployeeCrudApi
+
+
+
+N. Verificar que nuestro proyecto vuelve a tener acceso a la BD navegando a http://localhost:7150/swagger/index.html y probando uno de los controladores:
