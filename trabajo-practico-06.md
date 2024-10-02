@@ -274,31 +274,17 @@ A. Realizar en el código del front las mismas modificaciones hechas a la API. B
 
 Instalamos la libreria de toast
 
+![image](https://github.com/user-attachments/assets/39b50a48-9c15-486c-88cf-e050558ba92a)
 
 
 Abrimos el archivo src/app/app.config.ts y agregamos las importaciones necesarias para ToastrModule y BrowserAnimationsModule.
 
 
 
-Tambien importamos el css con los estilos de los toast
-
-
-
-Agregamos las validaciones en AddEmployee y las probamos
 
 
 
 
 C. Crear las pruebas unitarias necesarias en el front para validar las modificaciones realizadas en el código del front.
 
-Creamos las pruebas unitarias en addemployee.component.spec
-
-
-
-Las ejecutamos exitosamente
-
- 
-
-6. Subir el proyecto
-Link a repo: https://github.com/cettipao/AngularCrud-UnitTests
 
