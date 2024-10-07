@@ -20,10 +20,13 @@ dotnet add package coverlet.collector
 
 4.1.4 Agregar a nuestro pipeline ANTES del Build de Back la tarea de test con los argumentos especificados y la de publicación de resultados de cobertura:
 
+![image](https://github.com/user-attachments/assets/6b18a5bb-92af-4591-84ea-2a0951474af4)
 
  
 4.1.5 Agregar a nuestro pipeline ANTES del Build de front la tarea de test y la de publicación de los resultados.
- 
+
+
+
 4.1.6 Ejecutar el pipeline y analizar el resultado de las pruebas unitarias y la cobertura de código.
 
 
