@@ -58,3 +58,7 @@ A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
 
 ![image](https://github.com/user-attachments/assets/75fcb3bb-5ff3-41b2-a4bb-e285d024a3d5)
 
+![image](https://github.com/user-attachments/assets/239af781-4863-4e69-a8e5-9c039dcce81a)
+
+![image](https://github.com/user-attachments/assets/a0db2e0f-5b44-496a-a84d-cbadaa896fc5)
+
