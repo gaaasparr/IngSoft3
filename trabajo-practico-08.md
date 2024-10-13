@@ -53,3 +53,5 @@ Y el resultado fue:
 
 ![image](https://github.com/user-attachments/assets/acddbe31-baca-4f74-86a8-b2b7481a8be0)
 
+4.1.8 - Agregar tareas para generar imagen Docker de Front (DESAFIO)
+A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
