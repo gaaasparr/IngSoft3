@@ -39,3 +39,17 @@ En el primer intento no funciona porque falta dar acceso administrativo para ACR
 
 4.1.10 - Ejecutar el pipeline de nuevo y podemos ver los nuevos resultados
 
+tuve un problema con el path api, pero descubri que noestaba descomprimiendo el archivo y por eso no encontraba a /api, entonces agregué una task
+
+- task: ExtractFiles@1
+  displayName: 'Descomprimir API en carpeta api'
+  inputs:
+    archiveFilePatterns: '$(Pipeline.Workspace)/drop-back/EmployeeCrudApi.zip'
+    destinationFolder: '$(Pipeline.Workspace)/drop-back/api'
+
+Y el resultado fue:
+
+![image](https://github.com/user-attachments/assets/3fee5a9b-7eab-4772-afdd-b0c5b9f9a625)
+
+![image](https://github.com/user-attachments/assets/acddbe31-baca-4f74-86a8-b2b7481a8be0)
+
