@@ -30,12 +30,6 @@
 
 ![image](https://github.com/user-attachments/assets/ea79c97c-994a-4795-a08c-936f3b3970ee)
 
-En el primer intento no funciona porque falta dar acceso administrativo para ACR desde azure CLI
-
-![image](https://github.com/user-attachments/assets/bf732102-5fce-4d44-adeb-be0d74536517)
-
-![image](https://github.com/user-attachments/assets/9da3b223-f104-4ecc-a6ed-01ab0fe482a7)
-
 
 4.1.10 - Ejecutar el pipeline de nuevo y podemos ver los nuevos resultados
 
@@ -68,6 +62,13 @@ A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
 ![image](https://github.com/user-attachments/assets/c8f4d648-ad1a-49a7-83aa-961c57c8dca1)
 
 ![image](https://github.com/user-attachments/assets/cc44dd6b-a160-40fd-8cbb-61b8ba318e88)
+
+Acceso administrativo para ACR desde azure CLI
+
+![image](https://github.com/user-attachments/assets/bf732102-5fce-4d44-adeb-be0d74536517)
+
+![image](https://github.com/user-attachments/assets/9da3b223-f104-4ecc-a6ed-01ab0fe482a7)
+
 
 Agregar tareas para crear un recurso Azure Container Instances que levante un contenedor con nuestra imagen de back
 
