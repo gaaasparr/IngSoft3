@@ -63,7 +63,6 @@ A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
 
 ![image](https://github.com/user-attachments/assets/cc44dd6b-a160-40fd-8cbb-61b8ba318e88)
 
-![image](https://github.com/user-attachments/assets/eae0d1bc-e8d8-49bc-8f0c-f2dc168997ad)
 
 
 Acceso administrativo para ACR desde azure CLI
