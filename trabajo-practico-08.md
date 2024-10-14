@@ -62,3 +62,15 @@ A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
 
 ![image](https://github.com/user-attachments/assets/a0db2e0f-5b44-496a-a84d-cbadaa896fc5)
 
+
+4.1.9 - Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Construcción de Imagenes Docker y subida a ACR
+
+![image](https://github.com/user-attachments/assets/c8f4d648-ad1a-49a7-83aa-961c57c8dca1)
+
+![image](https://github.com/user-attachments/assets/cc44dd6b-a160-40fd-8cbb-61b8ba318e88)
+
+Agregar tareas para crear un recurso Azure Container Instances que levante un contenedor con nuestra imagen de back
+
+![image](https://github.com/user-attachments/assets/5ca5b5b9-2fed-4675-a0be-d392a506d68d)
+
+
