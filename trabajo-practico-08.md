@@ -63,6 +63,9 @@ A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
 
 ![image](https://github.com/user-attachments/assets/cc44dd6b-a160-40fd-8cbb-61b8ba318e88)
 
+![image](https://github.com/user-attachments/assets/eae0d1bc-e8d8-49bc-8f0c-f2dc168997ad)
+
+
 Acceso administrativo para ACR desde azure CLI
 
 ![image](https://github.com/user-attachments/assets/bf732102-5fce-4d44-adeb-be0d74536517)
@@ -76,4 +79,5 @@ Agregar tareas para crear un recurso Azure Container Instances que levante un co
 
 4.1.10 - Ejecutar el pipeline y en Azure Portal acceder al recurso de Azure Container Instances creado. Copiar la url del contenedor y navegarlo desde browser. Verificar que traiga datos.
 
+![image](https://github.com/user-attachments/assets/75ebbb22-ac55-4c42-a5eb-1e134bf69c95)
 
