@@ -81,3 +81,6 @@ Agregar tareas para crear un recurso Azure Container Instances que levante un co
 
 ![image](https://github.com/user-attachments/assets/75ebbb22-ac55-4c42-a5eb-1e134bf69c95)
 
+![image](https://github.com/user-attachments/assets/c7e02af7-ca02-492b-a58e-54c054c66c25)
+
+
