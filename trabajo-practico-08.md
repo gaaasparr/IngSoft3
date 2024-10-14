@@ -74,4 +74,6 @@ Agregar tareas para crear un recurso Azure Container Instances que levante un co
 
 ![image](https://github.com/user-attachments/assets/5ca5b5b9-2fed-4675-a0be-d392a506d68d)
 
+4.1.10 - Ejecutar el pipeline y en Azure Portal acceder al recurso de Azure Container Instances creado. Copiar la url del contenedor y navegarlo desde browser. Verificar que traiga datos.
+
 
