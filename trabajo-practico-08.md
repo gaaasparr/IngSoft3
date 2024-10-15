@@ -82,4 +82,12 @@ Agregar tareas para crear un recurso Azure Container Instances que levante un co
 
 ![image](https://github.com/user-attachments/assets/c7e02af7-ca02-492b-a58e-54c054c66c25)
 
+Funciona supuestamente todo pero cuadno vamos a buscarlo en le buscador no aparece nada, cuando vamos a nuestro ACI a buscar 
+
+![image](https://github.com/user-attachments/assets/ed840841-e088-4918-9ccb-dc5e259abd57)
+
+Vemos que el proceso de esta killeando cada vez que lo arrancamos, asi que tenemos que descargar el docker para correrlo de manera local
+
+![image](https://github.com/user-attachments/assets/f61ff376-e8e3-4a08-b5cf-e96c1571a73d)
+
 
