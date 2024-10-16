@@ -152,3 +152,35 @@ Agregamos un enviroment production con un pre-check approval para el deployment 
 
 ![image](https://github.com/user-attachments/assets/799f47b8-1eed-4b60-9c0c-2d822a615fa8)
 
+agregamos variables y luego les agregamos CPU y memoria
+
+![image](https://github.com/user-attachments/assets/e5aff860-eebb-4db2-b00f-453ff32f8960)
+
+Ahora modificamos el piline y agremos variables de entorno
+
+![image](https://github.com/user-attachments/assets/140581db-2586-4ffb-be8d-85295972bd56)
+
+Etapa para empezar el deploy a prod
+
+![image](https://github.com/user-attachments/assets/da4b454e-536d-4d96-b094-f0dcca1144fa)
+
+Back
+
+![image](https://github.com/user-attachments/assets/04e61ff4-3e3b-4111-86f8-1ad5930c70a8)
+
+
+Front
+
+![image](https://github.com/user-attachments/assets/0780c9de-8d88-4946-854d-25b0686414f8)
+
+Tarea por aprobar
+
+![image](https://github.com/user-attachments/assets/b3100110-07d5-4477-8db4-ce8846fd7a04)
+
+![image](https://github.com/user-attachments/assets/a5176288-4c98-418f-b895-441cbae20350)
+
+![image](https://github.com/user-attachments/assets/1c584ee1-efd4-4b98-952c-410f6ce60129)
+
+Una vez acptado y funcionando chequeamos que este corriendo.
+
+Aun no pasa por la etapa de Tests porque me falta implementar Cypress
