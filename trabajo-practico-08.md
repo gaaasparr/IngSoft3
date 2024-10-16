@@ -107,26 +107,28 @@ Se creó un stage muy parecido al del back para montar la imagen del Front con l
 
 ![image](https://github.com/user-attachments/assets/cce58f3d-3979-4c35-9e93-77209d4379af)
 
+Variable API_URL
+
+![image](https://github.com/user-attachments/assets/bec7cbd0-ec54-4fa8-a34d-6371eb980d83)
+
+
 Se modificaron y crearon los siguientes archivos para que corra correctamente el Front
 
 ![image](https://github.com/user-attachments/assets/6d6ebd9f-ec85-417c-b229-c28ee2ea4ec5)
 
 ![image](https://github.com/user-attachments/assets/45c86eaf-1760-4f41-ba7f-5765a0aacf78)
 
-![image](https://github.com/user-attachments/assets/8ed8c31f-bafd-43f9-8bd8-f5941584406c)
 
 ![image](https://github.com/user-attachments/assets/d832b787-0fbd-4ac3-bafa-3106a1375f8f)
 
 
-FRONT FUNCIONANDO
-
 ![image](https://github.com/user-attachments/assets/9d53c482-68b1-4ca1-926c-7bc1320a7d7c)
-
-
-
-
 
 
 ![image](https://github.com/user-attachments/assets/669b8582-0058-4b61-bd4f-a55f362cba2e)
 
+FRONT FUNCIONANDO
 
+![image](https://github.com/user-attachments/assets/04edfb0e-1dd0-4a95-85dd-5f94c5180084)
+
+4.1.12 - Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI.
