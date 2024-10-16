@@ -111,11 +111,21 @@ Se modificaron y crearon los siguientes archivos para que corra correctamente el
 
 ![image](https://github.com/user-attachments/assets/6d6ebd9f-ec85-417c-b229-c28ee2ea4ec5)
 
+![image](https://github.com/user-attachments/assets/45c86eaf-1760-4f41-ba7f-5765a0aacf78)
 
-![image](https://github.com/user-attachments/assets/61da5a1e-4407-4ad4-982e-3e09ddacfe8b)
+![image](https://github.com/user-attachments/assets/8ed8c31f-bafd-43f9-8bd8-f5941584406c)
+
+![image](https://github.com/user-attachments/assets/d832b787-0fbd-4ac3-bafa-3106a1375f8f)
 
 
-![image](https://github.com/user-attachments/assets/9ab218ec-a6c2-4e08-b87c-e604d3d93da1)
+FRONT FUNCIONANDO
+
+![image](https://github.com/user-attachments/assets/9d53c482-68b1-4ca1-926c-7bc1320a7d7c)
+
+
+
+
+
 
 ![image](https://github.com/user-attachments/assets/669b8582-0058-4b61-bd4f-a55f362cba2e)
 
