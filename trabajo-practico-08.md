@@ -130,3 +130,25 @@ FRONT FUNCIONANDO
 ![image](https://github.com/user-attachments/assets/04edfb0e-1dd0-4a95-85dd-5f94c5180084)
 
 4.1.12 - Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI.
+
+4.4 Desafíos:
+4.4.1 Agregar tareas para generar img/imagen Docker de Front. (Punto 4.1.8)
+
+Hecho
+
+4.4.2 Agregar tareas para generar en Azure Container Instances un contenedor de img/imagen Docker de Front. (Punto 4.1.11)
+
+Hecho
+
+4.4.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI. (Punto 4.1.12)
+
+
+
+4.4.4 Agregar etapa que dependa de la etapa de Deploy en ACI QA y genere contenedores en ACI para entorno de PROD.
+Agregamos un enviroment production con un pre-check approval para el deployment a prod
+
+![image](https://github.com/user-attachments/assets/61b4c26a-4630-44a8-aaaa-ef1e6978a7df)
+
+
+![image](https://github.com/user-attachments/assets/799f47b8-1eed-4b60-9c0c-2d822a615fa8)
+
