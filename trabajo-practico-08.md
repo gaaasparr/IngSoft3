@@ -84,7 +84,12 @@ Agregar tareas para crear un recurso Azure Container Instances que levante un co
 
 Funciona supuestamente todo pero cuadno vamos a buscarlo en le buscador no aparece nada, cuando vamos a nuestro ACI a buscar 
 
-![image](https://github.com/user-attachments/assets/ed840841-e088-4918-9ccb-dc5e259abd57)
+![image](https://github.com/user-attachments/assets/ed840841-e088-4918-9ccb-dc5e259abd57). 
+
+Finalmente corregimos allgunos errores que se ignoraban cuando se levantaba el pipeline y tenemos el BACK funcionando
+
+![image](https://github.com/user-attachments/assets/0decdcfe-8839-4e58-8733-4d22d190667b)
+
 
 Vemos que el proceso de esta killeando cada vez que lo arrancamos, asi que tenemos que descargar el docker para correrlo de manera local
 
