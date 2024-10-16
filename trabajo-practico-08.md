@@ -96,3 +96,5 @@ Finalmente corregimos allgunos errores que se ignoraban cuando se levantaba el p
 
 ![image](https://github.com/user-attachments/assets/0decdcfe-8839-4e58-8733-4d22d190667b)
 
+
+
