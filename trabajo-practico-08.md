@@ -96,5 +96,27 @@ Finalmente corregimos allgunos errores que se ignoraban cuando se levantaba el p
 
 ![image](https://github.com/user-attachments/assets/0decdcfe-8839-4e58-8733-4d22d190667b)
 
+4.1.11 - Agregar tareas para generar un recurso Azure Container Instances que levante un contenedor con nuestra imagen de front (DESAFIO)
+A la etapa creada en 4.1.9 Agregar tareas para generar contenedor en ACI con nuestra imagen de Front
+Tener en cuenta que el contenedor debe recibir como variable de entorno API_URL el valor de una variable container-url-api-qa definida en nuestro pipeline.
+Para que el punto anterior funcione el código fuente del front debe ser modificado para que la url de la API pueda ser cambiada luego de haber sido construída la imagen. Se deja un ejemplo de las modificaciones a realizar en el repo https://github.com/ingsoft3ucc/CrudAngularConEnvironment.git
+
+![image](https://github.com/user-attachments/assets/56c794af-a360-4744-a41f-d223e950d928)
+
+Se creó un stage muy parecido al del back para montar la imagen del Front con la siguiente variable
+
+![image](https://github.com/user-attachments/assets/cce58f3d-3979-4c35-9e93-77209d4379af)
+
+Se modificaron y crearon los siguientes archivos para que corra correctamente el Front
+
+![image](https://github.com/user-attachments/assets/6d6ebd9f-ec85-417c-b229-c28ee2ea4ec5)
+
+
+![image](https://github.com/user-attachments/assets/61da5a1e-4407-4ad4-982e-3e09ddacfe8b)
+
+
+![image](https://github.com/user-attachments/assets/9ab218ec-a6c2-4e08-b87c-e604d3d93da1)
+
+![image](https://github.com/user-attachments/assets/669b8582-0058-4b61-bd4f-a55f362cba2e)
 
 
