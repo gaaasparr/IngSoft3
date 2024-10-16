@@ -105,8 +105,6 @@ Para que el punto anterior funcione el código fuente del front debe ser modific
 
 Se creó un stage muy parecido al del back para montar la imagen del Front con la siguiente variable
 
-![image](https://github.com/user-attachments/assets/cce58f3d-3979-4c35-9e93-77209d4379af)
-
 Variable API_URL
 
 ![image](https://github.com/user-attachments/assets/bec7cbd0-ec54-4fa8-a34d-6371eb980d83)
