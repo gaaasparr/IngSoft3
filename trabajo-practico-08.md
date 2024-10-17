@@ -181,6 +181,15 @@ Tarea por aprobar
 
 ![image](https://github.com/user-attachments/assets/1c584ee1-efd4-4b98-952c-410f6ce60129)
 
-Una vez acptado y funcionando chequeamos que este corriendo.
+Una vez aceptado y funcionando chequeamos que este corriendo.
 
 Aun no pasa por la etapa de Tests porque me falta implementar Cypress
+
+![image](https://github.com/user-attachments/assets/b4d3c914-1963-4dd1-ba31-7609bf072df9)
+
+![image](https://github.com/user-attachments/assets/0b321577-0948-463a-963e-7db4df43bd48)
+
+![image](https://github.com/user-attachments/assets/90f89516-57e3-4e58-a365-b8c4bc3ff697)
+
+
+
