@@ -67,12 +67,21 @@ Agregar tareas para crear un recurso Azure Container Instances que levante un co
 
 
 4.2.5 Entregar un pipeline que incluya:
+
 A) Etapa Construcción y Pruebas Unitarias y Code Coverage Back y Front
+
 B) Construcción de Imágenes Docker y subida a ACR
+
 C) Deploy Back y Front en QA con pruebas de integración para Azure Web Apps
+
 D) Deploy Back y Front en QA con pruebas de integración para ACI
+
 E) Deploy Back y Front en QA con pruebas de integración para Azure Web Apps con Soporte para contenedores
+
 F) Aprobación manual de QA para los puntos C,D,E
+
 G) Deploy Back y Front en PROD para Azure Web Apps
+
 H) Deploy Back y Front en PROD para ACI
+
 I) Deploy Back y Front en PROD para Azure Web Apps con Soporte para contenedores
