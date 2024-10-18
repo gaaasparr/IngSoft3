@@ -23,6 +23,12 @@ Chequeamos que este todo funcionando
 
 
 
+![image](https://github.com/user-attachments/assets/9009ddf0-83db-44e0-8383-1085bbe43c12)
+
+
+![image](https://github.com/user-attachments/assets/cee56082-a6d3-4ebe-9ba0-78aff335e4dd)
+
+
 4.2.2 Agregar variables necesarias para el funcionamiento de la nueva etapa considerando que debe haber 2 entornos QA y PROD para Back y Front.
 
 
