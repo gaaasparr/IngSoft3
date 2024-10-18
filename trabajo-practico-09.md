@@ -3,49 +3,18 @@ Desarrollo del punto 4.1:
 
 4.1.1 - Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Construcción y Pruebas y de la etapa de Construcción de Imagenes Docker y subida a ACR realizada en el TP08
 Agregar tareas para crear un recurso Azure Container Instances que levante un contenedor con nuestra imagen de back utilizando un AppServicePlan en Linux
-  #---------------------------------------
-  ### STAGE DEPLOY TO AZURE APP SERVICE QA
-  #---------------------------------------
-  - stage: DeployImagesToAppServiceQA
-    displayName: 'Desplegar Imagenes en Azure App Service (QA)'
-    dependsOn: 
-    - BuildAndTestBackAndFront
-    - DockerBuildAndPush
-    condition: succeeded()
-    jobs:
-      - job: DeployImagesToAppServiceQA
-        displayName: 'Desplegar Imagenes de API y Front en Azure App Service (QA)'
-        pool:
-          vmImage: 'ubuntu-latest'
-        steps:
-          #------------------------------------------------------
-          # DEPLOY DOCKER API IMAGE TO AZURE APP SERVICE (QA)
-          #------------------------------------------------------
-          - task: AzureCLI@2
-            displayName: 'Verificar y crear el recurso Azure App Service para API (QA) si no existe'
-            inputs:
-              azureSubscription: '$(ConnectedServiceName)'
-              scriptType: 'bash'
-              scriptLocation: 'inlineScript'
-              inlineScript: |
-                # Verificar si el App Service para la API ya existe
-                if ! az webapp list --query "[?name=='$(WebAppApiNameContainersQA)' && resourceGroup=='$(ResourceGroupName)'] | length(@)" -o tsv | grep -q '^1$'; then
-                  echo "El App Service para API QA no existe. Creando..."
-                  # Crear el App Service sin especificar la imagen del contenedor
-                  az webapp create --resource-group $(ResourceGroupName) --plan $(AppServicePlanLinux) --name $(WebAppApiNameContainersQA) --deployment-container-image-name "nginx"  # Especifica una imagen temporal para permitir la creación
-                else
-                  echo "El App Service para API QA ya existe. Actualizando la imagen..."
-                fi
-  
-                # Configurar el App Service para usar Azure Container Registry (ACR)
-                az webapp config container set --name $(WebAppApiNameContainersQA) --resource-group $(ResourceGroupName) \
-                  --container-image-name $(acrLoginServer)/$(backImageName):$(backImageTag) \
-                  --container-registry-url https://$(acrLoginServer) \
-                  --container-registry-user $(acrName) \
-                  --container-registry-password $(az acr credential show --name $(acrName) --query "passwords[0].value" -o tsv)
-                # Establecer variables de entorno
-                az webapp config appsettings set --name $(WebAppApiNameContainersQA) --resource-group $(ResourceGroupName) \
-                  --settings ConnectionStrings__DefaultConnection="$(cnn-string-qa)" \
+
+![image](https://github.com/user-attachments/assets/7e8bfc1a-5965-4a8e-aedb-ccf172110c3e)
+
+![image](https://github.com/user-attachments/assets/9061268d-17b5-4338-8cd2-20cf76393780)
+
+![image](https://github.com/user-attachments/assets/196e04ec-8ab0-4c73-bae5-ca9d640e17d2)
+
+![image](https://github.com/user-attachments/assets/ec2a0490-e1f8-4cf3-b5d1-f504b1ba22ff)
+
+Chequeamos que este todo funcionando
+
+![image](https://github.com/user-attachments/assets/58b116c0-97d3-4db5-8bf3-7a7e16794176)
 
             
 4.2 Desafíos:
