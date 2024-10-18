@@ -30,11 +30,12 @@ Chequeamos que este todo funcionando
 
 4.2.2 Agregar variables necesarias para el funcionamiento de la nueva etapa considerando que debe haber 2 entornos QA y PROD para Back y Front.
 
+![image](https://github.com/user-attachments/assets/e5c37f71-9314-4c34-a8c2-235a467c2546)
 
 
 4.2.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en Azure App Services con Soporte para Contenedores.
 
-
+-
 
 4.2.4 Agregar etapa que dependa de la etapa de Deploy en QA que genere un entorno de PROD.
 
