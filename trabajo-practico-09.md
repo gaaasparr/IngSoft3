@@ -21,10 +21,9 @@ Chequeamos que este todo funcionando
 
 4.2.1 Agregar tareas para generar Front en Azure App Service con Soporte para Contenedores
 
-
+![image](https://github.com/user-attachments/assets/8b7e3ebe-25a8-4aae-818a-4591eeb6b247)
 
 ![image](https://github.com/user-attachments/assets/9009ddf0-83db-44e0-8383-1085bbe43c12)
-
 
 ![image](https://github.com/user-attachments/assets/cee56082-a6d3-4ebe-9ba0-78aff335e4dd)
 
