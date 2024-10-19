@@ -35,9 +35,19 @@ Chequeamos que este todo funcionando
 
 4.2.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en Azure App Services con Soporte para Contenedores.
 
--
+![image](https://github.com/user-attachments/assets/d459c398-3a70-4660-9017-9d17089f6e81)
+
+
+
 
 4.2.4 Agregar etapa que dependa de la etapa de Deploy en QA que genere un entorno de PROD.
+
+![image](https://github.com/user-attachments/assets/ba32b51b-fcbf-4e72-bbf3-6075ff35e25d)
+
+![image](https://github.com/user-attachments/assets/4e390efd-380a-4015-8d6c-f0d2ff60cd4b)
+
+
+![image](https://github.com/user-attachments/assets/348c74f5-1265-42b7-9ab8-e55bbbca4a9d)
 
 
 
