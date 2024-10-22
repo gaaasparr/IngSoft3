@@ -1,37 +1,37 @@
-4.1.1 Crear archivos DockerFile para nuestros proyectos de Back y Front
+# 4.1.1 Crear archivos DockerFile para nuestros proyectos de Back y Front
 
 ![image](https://github.com/user-attachments/assets/45a83199-0346-4c0c-ac49-468658230b31)
 
 
-4.1.2 Crear un recurso ACR en Azure Portal siguiendo el instructivo 5.1
+# 4.1.2 Crear un recurso ACR en Azure Portal siguiendo el instructivo 5.1
 
 ![image](https://github.com/user-attachments/assets/ea905c1b-4f50-486b-853b-454ecfc0670a)
 
 
-4.1.3 Modificar nuestro pipeline en la etapa de Build y Test
+# 4.1.3 Modificar nuestro pipeline en la etapa de Build y Test
 
 ![image](https://github.com/user-attachments/assets/f198c68b-dc39-4b7b-924a-826f44e420af)
 
 ![image](https://github.com/user-attachments/assets/bd899164-2620-4cc5-bd82-bfacad90089d)
 
-4.1.4 En caso de no contar en nuestro proyecto con una ServiceConnection a Azure Portal para el manejo de recursos, agregar una service connection a Azure Resource Manager como se indica en instructivo 5.2
+# 4.1.4 En caso de no contar en nuestro proyecto con una ServiceConnection a Azure Portal para el manejo de recursos, agregar una service connection a Azure Resource Manager como se indica en instructivo 5.2
 
 ![image](https://github.com/user-attachments/assets/5db5901f-e1c6-4475-9aae-45cbfaa44d7b)
 
-4.1.5 Agregar a nuestro pipeline variables
+# 4.1.5 Agregar a nuestro pipeline variables
 
 ![image](https://github.com/user-attachments/assets/46b365dc-d667-4cfe-9fb1-54b083db7bdc)
 
-4.1.6 Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Build y Test
+# 4.1.6 Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Build y Test
 
 ![image](https://github.com/user-attachments/assets/6c0f6a24-5013-41c3-8396-c7ea1f0e8b92)
 
-4.1.7 - Ejecutar el pipeline y en Azure Portal acceder a la opción Repositorios de nuestro recurso Azure Container Registry. Verificar que exista una imagen con el nombre especificado en la variable backImageName asignada en nuestro pipeline
+# 4.1.7 - Ejecutar el pipeline y en Azure Portal acceder a la opción Repositorios de nuestro recurso Azure Container Registry. Verificar que exista una imagen con el nombre especificado en la variable backImageName asignada en nuestro pipeline
 
 ![image](https://github.com/user-attachments/assets/ea79c97c-994a-4795-a08c-936f3b3970ee)
 
 
-4.1.10 - Ejecutar el pipeline de nuevo y podemos ver los nuevos resultados
+# 4.1.10 - Ejecutar el pipeline de nuevo y podemos ver los nuevos resultados
 
 tuve un problema con el path api, pero descubri que noestaba descomprimiendo el archivo y por eso no encontraba a /api, entonces agregué una task
 
@@ -47,7 +47,7 @@ Y el resultado fue:
 
 ![image](https://github.com/user-attachments/assets/acddbe31-baca-4f74-86a8-b2b7481a8be0)
 
-4.1.8 - Agregar tareas para generar imagen Docker de Front (DESAFIO)
+# 4.1.8 - Agregar tareas para generar imagen Docker de Front (DESAFIO)
 A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
 
 ![image](https://github.com/user-attachments/assets/75fcb3bb-5ff3-41b2-a4bb-e285d024a3d5)
@@ -57,7 +57,7 @@ A la etapa creada en 4.1.6 Agregar tareas para generar imagen Docker de Front
 ![image](https://github.com/user-attachments/assets/a0db2e0f-5b44-496a-a84d-cbadaa896fc5)
 
 
-4.1.9 - Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Construcción de Imagenes Docker y subida a ACR
+# 4.1.9 - Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Construcción de Imagenes Docker y subida a ACR
 
 ![image](https://github.com/user-attachments/assets/c8f4d648-ad1a-49a7-83aa-961c57c8dca1)
 
@@ -76,7 +76,7 @@ Agregar tareas para crear un recurso Azure Container Instances que levante un co
 
 ![image](https://github.com/user-attachments/assets/5ca5b5b9-2fed-4675-a0be-d392a506d68d)
 
-4.1.10 - Ejecutar el pipeline y en Azure Portal acceder al recurso de Azure Container Instances creado. Copiar la url del contenedor y navegarlo desde browser. Verificar que traiga datos.
+# 4.1.10 - Ejecutar el pipeline y en Azure Portal acceder al recurso de Azure Container Instances creado. Copiar la url del contenedor y navegarlo desde browser. Verificar que traiga datos.
 
 ![image](https://github.com/user-attachments/assets/75ebbb22-ac55-4c42-a5eb-1e134bf69c95)
 
@@ -96,7 +96,7 @@ Finalmente corregimos allgunos errores que se ignoraban cuando se levantaba el p
 
 ![image](https://github.com/user-attachments/assets/0decdcfe-8839-4e58-8733-4d22d190667b)
 
-4.1.11 - Agregar tareas para generar un recurso Azure Container Instances que levante un contenedor con nuestra imagen de front (DESAFIO)
+# 4.1.11 - Agregar tareas para generar un recurso Azure Container Instances que levante un contenedor con nuestra imagen de front (DESAFIO)
 A la etapa creada en 4.1.9 Agregar tareas para generar contenedor en ACI con nuestra imagen de Front
 Tener en cuenta que el contenedor debe recibir como variable de entorno API_URL el valor de una variable container-url-api-qa definida en nuestro pipeline.
 Para que el punto anterior funcione el código fuente del front debe ser modificado para que la url de la API pueda ser cambiada luego de haber sido construída la imagen. Se deja un ejemplo de las modificaciones a realizar en el repo https://github.com/ingsoft3ucc/CrudAngularConEnvironment.git
@@ -129,18 +129,18 @@ FRONT FUNCIONANDO
 
 ![image](https://github.com/user-attachments/assets/04edfb0e-1dd0-4a95-85dd-5f94c5180084)
 
-4.1.12 - Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI.
+# 4.1.12 - Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI.
 
-4.4 Desafíos:
-4.4.1 Agregar tareas para generar img/imagen Docker de Front. (Punto 4.1.8)
-
-Hecho
-
-4.4.2 Agregar tareas para generar en Azure Container Instances un contenedor de img/imagen Docker de Front. (Punto 4.1.11)
+# 4.4 Desafíos:
+# 4.4.1 Agregar tareas para generar img/imagen Docker de Front. (Punto 4.1.8)
 
 Hecho
 
-4.4.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI. (Punto 4.1.12)
+# 4.4.2 Agregar tareas para generar en Azure Container Instances un contenedor de img/imagen Docker de Front. (Punto 4.1.11)
+
+Hecho
+
+# 4.4.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI. (Punto 4.1.12)
 
 ![image](https://github.com/user-attachments/assets/469a93e3-3919-48d3-9950-8cdaa85065cd)
 
@@ -152,7 +152,7 @@ También configuré el archivo cypress.config.ts
 
 
 
-4.4.4 Agregar etapa que dependa de la etapa de Deploy en ACI QA y genere contenedores en ACI para entorno de PROD.
+# 4.4.4 Agregar etapa que dependa de la etapa de Deploy en ACI QA y genere contenedores en ACI para entorno de PROD.
 Agregamos un enviroment production con un pre-check approval para el deployment a prod
 
 ![image](https://github.com/user-attachments/assets/61b4c26a-4630-44a8-aaaa-ef1e6978a7df)
@@ -197,8 +197,10 @@ ACTUALIZACION
 
 Pruebas de integración implementadas en el proyecto, antes de eso el piline corria con el script
 
+```
 - script: |
           continueOnError: true
+```
 
 que me permitia chequear si funcionaba el resto del proyecto a pesar de que no estaban pasando los tests de ingración.
 
@@ -210,6 +212,9 @@ que me permitia chequear si funcionaba el resto del proyecto a pesar de que no e
 ![image](https://github.com/user-attachments/assets/0b321577-0948-463a-963e-7db4df43bd48)
 
 ![image](https://github.com/user-attachments/assets/90f89516-57e3-4e58-a365-b8c4bc3ff697)
+
+
+PIPELINE FINAL
 
 ```
 trigger:
