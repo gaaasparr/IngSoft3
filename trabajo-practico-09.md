@@ -1,6 +1,6 @@
 # TRABAJO PRÁCTICO 9
 
-##(PIPELINE FINAL Y PIPELINE CON TEMPLATES IMPLEMENTADOS AL FINAL DEL DOCUMENTO)
+## (PIPELINE FINAL Y PIPELINE CON TEMPLATES IMPLEMENTADOS AL FINAL DEL DOCUMENTO)
 
 4.1 Modificar nuestro pipeline para incluir el deploy en QA y PROD de Imagenes Docker en Servicio Azure App Services con Soporte para Contenedores
 Desarrollo del punto 4.1:
