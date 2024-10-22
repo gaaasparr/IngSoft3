@@ -142,6 +142,10 @@ Hecho
 
 4.4.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en ACI. (Punto 4.1.12)
 
+![image](https://github.com/user-attachments/assets/bdb37673-41a2-4449-affb-c41a00774325)
+
+
+
 
 
 4.4.4 Agregar etapa que dependa de la etapa de Deploy en ACI QA y genere contenedores en ACI para entorno de PROD.
@@ -184,6 +188,18 @@ Tarea por aprobar
 Una vez aceptado y funcionando chequeamos que este corriendo.
 
 Aun no pasa por la etapa de Tests porque me falta implementar Cypress
+
+ACTUALIZACION
+
+Pruebas de integración implementadas en el proyecto, antes de eso el piline corria con el script
+
+- script: |
+          continueOnError: true
+
+que me permitia chequear si funcionaba el resto del proyecto a pesar de que no estaban pasando los tests de ingración.
+
+![image](https://github.com/user-attachments/assets/052d0dee-f526-46cd-906a-d23a7defad48)
+
 
 ![image](https://github.com/user-attachments/assets/b4d3c914-1963-4dd1-ba31-7609bf072df9)
 
