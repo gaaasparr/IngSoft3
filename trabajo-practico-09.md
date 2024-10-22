@@ -2,10 +2,10 @@
 
 ### (PIPELINE FINAL Y PIPELINE CON TEMPLATES IMPLEMENTADOS AL FINAL DEL DOCUMENTO)
 
-4.1 Modificar nuestro pipeline para incluir el deploy en QA y PROD de Imagenes Docker en Servicio Azure App Services con Soporte para Contenedores
+### 4.1 Modificar nuestro pipeline para incluir el deploy en QA y PROD de Imagenes Docker en Servicio Azure App Services con Soporte para Contenedores
 Desarrollo del punto 4.1:
 
-4.1.1 - Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Construcción y Pruebas y de la etapa de Construcción de Imagenes Docker y subida a ACR realizada en el TP08
+### 4.1.1 - Agregar a nuestro pipeline una nueva etapa que dependa de nuestra etapa de Construcción y Pruebas y de la etapa de Construcción de Imagenes Docker y subida a ACR realizada en el TP08
 Agregar tareas para crear un recurso Azure Container Instances que levante un contenedor con nuestra imagen de back utilizando un AppServicePlan en Linux
 
 ![image](https://github.com/user-attachments/assets/7e8bfc1a-5965-4a8e-aedb-ccf172110c3e)
@@ -21,9 +21,9 @@ Chequeamos que este todo funcionando
 ![image](https://github.com/user-attachments/assets/58b116c0-97d3-4db5-8bf3-7a7e16794176)
 
             
-4.2 Desafíos:
+## 4.2 Desafíos:
 
-4.2.1 Agregar tareas para generar Front en Azure App Service con Soporte para Contenedores
+### 4.2.1 Agregar tareas para generar Front en Azure App Service con Soporte para Contenedores
 
 ![image](https://github.com/user-attachments/assets/8b7e3ebe-25a8-4aae-818a-4591eeb6b247)
 
@@ -32,19 +32,19 @@ Chequeamos que este todo funcionando
 ![image](https://github.com/user-attachments/assets/cee56082-a6d3-4ebe-9ba0-78aff335e4dd)
 
 
-4.2.2 Agregar variables necesarias para el funcionamiento de la nueva etapa considerando que debe haber 2 entornos QA y PROD para Back y Front.
+### 4.2.2 Agregar variables necesarias para el funcionamiento de la nueva etapa considerando que debe haber 2 entornos QA y PROD para Back y Front.
 
 ![image](https://github.com/user-attachments/assets/e5c37f71-9314-4c34-a8c2-235a467c2546)
 
 
-4.2.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en Azure App Services con Soporte para Contenedores.
+### 4.2.3 Agregar tareas para correr pruebas de integración en el entorno de QA de Back y Front creado en Azure App Services con Soporte para Contenedores.
 
 ![image](https://github.com/user-attachments/assets/d459c398-3a70-4660-9017-9d17089f6e81)
 
 
 
 
-4.2.4 Agregar etapa que dependa de la etapa de Deploy en QA que genere un entorno de PROD.
+### 4.2.4 Agregar etapa que dependa de la etapa de Deploy en QA que genere un entorno de PROD.
 
 ![image](https://github.com/user-attachments/assets/ba32b51b-fcbf-4e72-bbf3-6075ff35e25d)
 
@@ -55,7 +55,7 @@ Chequeamos que este todo funcionando
 
 
 
-4.2.5 Entregar un pipeline que incluya:
+### 4.2.5 Entregar un pipeline que incluya:
 
 A) Etapa Construcción y Pruebas Unitarias y Code Coverage Back y Front
 
@@ -79,7 +79,7 @@ I) Deploy Back y Front en PROD para Azure Web Apps con Soporte para contenedores
 
 
 
-PIPELINE FINAL
+### PIPELINE FINAL
 
 ```
 trigger:
@@ -709,7 +709,7 @@ stages:
                     --memory $(container-memory-front-prod)
 ```
 
-PIPELINE CON TEMPLATES IMPLEMENTADOS Y CARPETAS CREADAS
+### PIPELINE CON TEMPLATES IMPLEMENTADOS Y CARPETAS CREADAS
 
 ![image](https://github.com/user-attachments/assets/03969aad-4887-41b9-9ccd-758b6a0a38d6)
 
