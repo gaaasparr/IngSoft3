@@ -715,6 +715,8 @@ PIPELINE CON TEMPLATES IMPLEMENTADOS Y CARPETAS CREADAS
 
 ![image](https://github.com/user-attachments/assets/97b335bc-b72c-4f90-9062-673e24acfb21)
 
+![image](https://github.com/user-attachments/assets/abdbd6e7-b55e-46a3-a939-aac1e7567526)
+
 
 
 
