@@ -1,3 +1,7 @@
+# TRABAJO PRÁCTICO 9
+
+##(PIPELINE FINAL Y PIPELINE CON TEMPLATES IMPLEMENTADOS AL FINAL DEL DOCUMENTO)
+
 4.1 Modificar nuestro pipeline para incluir el deploy en QA y PROD de Imagenes Docker en Servicio Azure App Services con Soporte para Contenedores
 Desarrollo del punto 4.1:
 
@@ -70,6 +74,10 @@ G) Deploy Back y Front en PROD para Azure Web Apps
 H) Deploy Back y Front en PROD para ACI
 
 I) Deploy Back y Front en PROD para Azure Web Apps con Soporte para contenedores
+
+![image](https://github.com/user-attachments/assets/aae877a9-aa5d-4f16-958c-96cbefe64358)
+
+
 
 PIPELINE FINAL
 
@@ -700,4 +708,85 @@ stages:
                     --cpu $(container-cpu-front-prod) \
                     --memory $(container-memory-front-prod)
 ```
+
+PIPELINE CON TEMPLATES IMPLEMENTADOS Y CARPETAS CREADAS
+
+![image](https://github.com/user-attachments/assets/03969aad-4887-41b9-9ccd-758b6a0a38d6)
+
+![image](https://github.com/user-attachments/assets/97b335bc-b72c-4f90-9062-673e24acfb21)
+
+
+
+
+
+```
+trigger:
+- main
+
+pool:
+  vmImage: 'windows-latest'
+
+# AZURE VARIABLES
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  configuration: 'Release'
+  buildConfiguration: 'Release'
+  acrLoginServer: 'gasparacr.azurecr.io'
+  acrName: 'gasparACR'
+  backImageName: 'employee-crud-api'
+  frontImageName: 'employee-crud-front'
+  ResourceGroupName: 'GasparUCC'
+  backContainerInstanceNameQA: 'gr-crud-api-qa'
+  frontContainerInstanceNameQA: 'gr-crud-front-qa'
+  frontImageTag: 'latest'
+  container-cpu-front-qa: 1
+  container-memory-front-qa: 1.5
+  backImageTag: 'latest'
+  container-cpu-api-qa: 1
+  container-memory-api-qa: 1.5
+  baseUrlBackEnd: 'http://$(backContainerInstanceNameQA).eastus.azurecontainer.io'
+  baseUrlFrontEnd: 'http://$(frontContainerInstanceNameQA).eastus.azurecontainer.io'
+
+  WebAppApiNameContainersQA: 'gr-crud-api-qa'
+  WebAppFrontNameContainersQA: 'gr-crud-front-qa'
+  WebAppApiNameContainersPROD: 'gr-crud-front-prod'
+  WebAppFrontNameContainersPROD: 'gr-crud-front-prod'
+
+  AppServicePlanLinux: 'LinuxAppPlan01'
+
+#PROD
+  backContainerInstanceNamePROD: 'gr-crud-api-prod'
+  frontContainerInstanceNamePROD: 'gr-crud-front-prod'
+  container-cpu-api-prod: 1
+  container-memory-api-prod: 1.5
+  container-cpu-front-prod: 1
+  container-memory-front-prod: 1.5
+  
+  cnn-string-qa: 'Server=tcp:gasparbdd.database.windows.net,1433;Initial Catalog=gasparbdd;Persist Security Info=False;User ID=sqladmin;Password=Azure@456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+  cnn-string-prod: 'Server=tcp:gasparbdd.database.windows.net,1433;Initial Catalog=gasparbdd;Persist Security Info=False;User ID=sqladmin;Password=Azure@456;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
+  ConnectedServiceName: 'ServiceConnectionARM' #Por ejemplo 'ServiceConnectionARM'
+  frontPath: './EmployeeCrudAngular'
+  
+  
+stages:
+
+- template: templates/BuildAndTest.yml
+
+- template: templates/BuildDockerACR.yml
+
+- template: templates/DeployACIqa.yml
+
+- template: templates/DeployACIqaFRONT.yml
+
+- template: templates/AppServiceQA.yml
+
+- template: templates/IntegrationTests.yml
+
+- template: templates/AppServicePROD.yml
+
+- template: templates/DeployACIprod.yml
+```
+
 
