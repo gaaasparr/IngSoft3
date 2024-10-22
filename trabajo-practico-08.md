@@ -218,7 +218,7 @@ que me permitia chequear si funcionaba el resto del proyecto a pesar de que no e
 
 
 PIPELINE FINAL
-
+```
 trigger:
 - main
 
@@ -695,3 +695,4 @@ stages:
                     --cpu $(container-cpu-front-prod) \
                     --memory $(container-memory-front-prod)
 
+```
